@@ -1,0 +1,378 @@
+/*
+**************************
+          name
+**************************
+*/
+
+/*
+************END***********
+*/
+
+/*
+**************************
+          general
+**************************
+*/
+
+* {
+  font-family: "Nunito", Sans-serif;
+}
+
+.btn {
+  border: none;
+  padding: 13px;
+  border-radius: 50px;
+}
+
+.btn-yellow {
+  background-color: #f9dd4a;
+  box-shadow: 0px 3px 3px 0px #e1e1e1;
+}
+
+.btn-yellow:hover {
+  background-color: #fff9c6;
+}
+
+.btn-blue {
+  background-color: #2779f5;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-blue:hover {
+  background-color: #014cc1;
+}
+
+.btn-green {
+  background-color: #00bc89;
+}
+
+.btn-green:hover {
+  background-color: #0a8a67;
+}
+
+.btn-darkblue {
+  background-color: #09217b;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-darkblue:hover {
+  background-color: #050d2b;
+}
+
+/*
+************END***********
+*/
+
+/*
+**************************
+          header
+**************************
+*/
+header {
+  height: 58px;
+  width: 100%;
+  margin: 0px;
+  box-shadow: 0px 3px 3px 0px #e1e1e1;
+}
+
+header img {
+  max-width: 173px;
+  height: auto;
+}
+
+.container-header {
+  display: flex;
+  max-width: 350px;
+  margin: 16px 72px;
+  justify-content: space-between;
+}
+
+/*
+************END***********
+*/
+
+/*
+**************************
+          navbar
+**************************
+*/
+
+.line {
+  background-color: #6b7280;
+  height: 2.4px;
+  border-radius: 25px;
+  width: 20px;
+  margin-bottom: 4px;
+}
+
+.burger {
+  margin-top: 7px;
+  margin-right: 5px;
+  border-radius: 7px;
+  padding: 3px 6px;
+}
+
+.burger img {
+  height: 32px;
+  width: 27px;
+}
+
+.burger:hover {
+  background-color: #f3f4f6;
+}
+
+.hide-me {
+  position: absolute;
+  opacity: 0;
+}
+
+header .come-down {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: white;
+}
+
+/* header .black-out {
+  display: none;
+  background-color: black;
+  opacity: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+} */
+
+/* #toggle:checked ~ .come-down {
+  display: block;
+} */
+
+.focus:focus-within .burger {
+  border: #d9d9da solid 2px;
+}
+
+.focus:focus-within > .come-down {
+  display: block;
+}
+
+/*
+************END***********
+*/
+
+/*
+**************************
+       video-section
+**************************
+*/
+
+.video-section img {
+  display: none;
+}
+
+iframe {
+  border: 5px solid #09217b;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/*
+************END***********
+*/
+
+/*
+**************************
+  consistent and reliable
+**************************
+*/
+.consistent {
+  margin-bottom: 250px;
+}
+
+.looking-glass {
+  width: 18px;
+  height: auto;
+  display: inline;
+}
+
+.consistent a {
+  color: #2779f5;
+  display: block;
+}
+
+.consistent a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.right-arrow {
+  width: 8px;
+  height: auto;
+  display: inline;
+}
+
+.container-consistent > div {
+  height: 500px;
+  width: auto;
+}
+
+.container-consistent {
+  position: relative;
+}
+
+.cost-effective,
+.free-primary,
+.free-secondary,
+.premium-primary {
+  position: absolute;
+  opacity: 0;
+}
+
+.cost-effective:target,
+.free-primary:target,
+.free-secondary:target,
+.premium-primary:target {
+  z-index: 1;
+  opacity: 1;
+  scroll-margin-top: 500px;
+}
+
+.consistent form #underline1:checked ~ #label-underline1,
+.consistent form #underline2:checked ~ #label-underline2,
+.consistent form #underline3:checked ~ #label-underline3,
+.consistent form #underline4:checked ~ #label-underline4 {
+  text-decoration: underline;
+  text-decoration-color: #2779f5;
+}
+/*
+************END***********
+*/
+/*
+**************************
+      turning cards
+**************************
+*/
+
+.turning-cards {
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 0px auto 10px auto;
+}
+
+/* This container is needed to position the front and back side */
+.turning-cards-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.turning-cards:hover .turning-cards-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.front {
+  background-color: white;
+  border: grey solid 1px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0px 3px 3px 0px #e1e1e1;
+}
+
+/* Style the back side */
+.back {
+  background-color: white;
+  border: grey solid 1px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0px 3px 3px 0px #e1e1e1;
+  transform: rotateY(180deg);
+}
+
+.turning-cards img {
+  height: 20px;
+  width: auto;
+}
+
+.turning-cards .number {
+  font-size: 6rem;
+}
+
+.schools-supported .number {
+  color: #2779f5;
+}
+
+.pupils-taught .number {
+  color: #00bc89;
+}
+/*
+************END***********
+*/
+
+/*
+**************************
+          carousel
+**************************
+*/
+.carousel-item {
+  margin: 20px;
+  height: 600px;
+  background-color: white;
+  border: grey solid 1px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0px 3px 3px 0px #e1e1e1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#maria {
+  display: block;
+}
+
+#maria:target,
+#catherine:target,
+#mandy:target,
+#gemma:target,
+#abi:target,
+#daniel:target,
+#angie:target,
+#liz:target {
+  z-index: 2;
+  display: block;
+  scroll-margin-top: 300px;
+}
+
+.carousel-item img {
+  height: 50px;
+}
+
+.carousel-container {
+  position: relative;
+  margin-bottom: 700px;
+}
+
+/*
+************END***********
+*/
