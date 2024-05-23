@@ -135,6 +135,7 @@ header .come-down {
   top: 0;
   height: 100vh;
   background: white;
+  z-index: 2;
 }
 
 /* header .black-out {
@@ -238,7 +239,7 @@ iframe {
 .premium-primary:target {
   z-index: 1;
   opacity: 1;
-  scroll-margin-top: 500px;
+  /* scroll-margin-top: 500px; */
 }
 
 .consistent form #underline1:checked ~ #label-underline1,
