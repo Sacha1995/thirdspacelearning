@@ -23,6 +23,7 @@
   border: none;
   padding: 13px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .btn-yellow {
@@ -46,6 +47,7 @@
 
 .btn-green {
   background-color: #00bc89;
+  color: white;
 }
 
 .btn-green:hover {
@@ -122,6 +124,7 @@ header img {
 
 .burger:hover {
   background-color: #f3f4f6;
+  cursor: pointer;
 }
 
 .hide-me {
@@ -196,10 +199,21 @@ header .come-down {
   display: none;
 }
 
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
 iframe {
   border: 5px solid #09217b;
   border-radius: 18px;
-  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*
@@ -213,6 +227,10 @@ iframe {
 */
 .consistent {
   margin-bottom: 250px;
+}
+
+form label a:active {
+  text-decoration: underline;
 }
 
 .looking-glass {
@@ -238,7 +256,7 @@ iframe {
 }
 
 .container-consistent > div {
-  height: 500px;
+  height: 200px;
   width: auto;
 }
 
@@ -252,6 +270,12 @@ iframe {
 .premium-primary {
   position: absolute;
   opacity: 0;
+  background-color: white;
+}
+
+#cost-effective {
+  opacity: 1;
+  z-index: 1;
 }
 
 .cost-effective:target,
@@ -270,6 +294,7 @@ iframe {
   text-decoration: underline;
   text-decoration-color: #2779f5;
 }
+
 /*
 ************END***********
 */
@@ -284,6 +309,7 @@ iframe {
   height: 300px;
   perspective: 1000px;
   margin: 0px auto 10px auto;
+  cursor: pointer;
 }
 
 /* This container is needed to position the front and back side */
@@ -393,6 +419,102 @@ iframe {
 .carousel-container {
   position: relative;
   margin-bottom: 700px;
+}
+
+/*
+************END***********
+*/
+
+/*
+**************************
+          name
+**************************
+*/
+.container-working {
+  box-shadow: 0px 8.25px 11.25px rgba(0, 0, 0, 0.2),
+    0px 6.75px 34.5px rgba(0, 0, 0, 0.12), 0px 18px 28.5px rgba(0, 0, 0, 0.14);
+  width: 90%;
+  margin: 0px auto 20px auto;
+  padding: 15px;
+  border-radius: 24px;
+}
+
+/*
+************END***********
+*/
+
+/*
+**************************
+  ready to get started
+**************************
+*/
+.container-ready {
+  padding: 30px;
+  background-color: white;
+  max-width: 515px;
+  margin: 0px 15px 20px 15px;
+}
+
+main {
+  background-image: url(img/background.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 100vw;
+  padding-bottom: 100px;
+}
+/*
+************END***********
+*/
+
+/*
+**************************
+          footer
+**************************
+*/
+footer .logo-footer {
+  width: 173px;
+}
+
+.icons {
+  height: 15px;
+  display: inline;
+}
+
+.contact a {
+  display: block;
+}
+
+.social-media {
+  height: 30px;
+  margin: 5px;
+  display: inline;
+}
+
+.container-flag {
+  border-radius: 45px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flag {
+  height: 30px;
+}
+
+.container-flag-american {
+  display: none;
+}
+
+#drop-down {
+  cursor: pointer;
+}
+
+#drop-down:checked ~ .container-flag-american {
+  display: flex;
 }
 
 /*
