@@ -203,7 +203,7 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/XK_4Omh9CjI?si=QfOWYAxtxL2YFVbO"
+              src="https://www.youtube.com/embed/XK_4Omh9CjI?si=QfOWYAxtxL2YFVbOcontrols=0&mute=1&autoplay=1"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
@@ -240,13 +240,14 @@
             need it:
           </p>
           <form class="container-form">
-            <input
-              type="radio"
-              id="underline1"
-              class="underline"
-              name="underline"
-              checked
-            /><label for="underline1" id="label-underline1">
+            <label for="underline1" id="label-underline1"
+              ><input
+                type="radio"
+                id="underline1"
+                class="underline"
+                name="underline"
+                checked
+              />
               <a href="#cost-effective"
                 ><img
                   src="./img/looking-glass.svg"
@@ -255,12 +256,13 @@
                 />Cost-effective-DFE-approved tutoring</a
               ></label
             >
-            <input
-              type="radio"
-              id="underline2"
-              class="underline"
-              name="underline"
-            /><label for="underline2" id="label-underline2">
+            <label for="underline2" id="label-underline2"
+              ><input
+                type="radio"
+                id="underline2"
+                class="underline"
+                name="underline"
+              />
               <a href="#free-primary"
                 ><img
                   src="./img/looking-glass.svg"
@@ -268,12 +270,13 @@
                   class="looking-glass"
                 />Free primary maths resources</a
               ></label
-            ><input
-              type="radio"
-              id="underline3"
-              class="underline"
-              name="underline"
-            /><label for="underline3" id="label-underline3">
+            ><label for="underline3" id="label-underline3"
+              ><input
+                type="radio"
+                id="underline3"
+                class="underline"
+                name="underline"
+              />
               <a href="#free-secondary"
                 ><img
                   src="./img/looking-glass.svg"
@@ -282,12 +285,13 @@
                 />Free secondary maths resources</a
               ></label
             >
-            <input
-              type="radio"
-              id="underline4"
-              class="underline"
-              name="underline"
-            /><label for="underline4" id="label-underline4">
+            <label for="underline4" id="label-underline4"
+              ><input
+                type="radio"
+                id="underline4"
+                class="underline"
+                name="underline"
+              />
               <a href="#premium-primary"
                 ><img
                   src="./img/looking-glass.svg"
@@ -582,11 +586,12 @@
       <!-- carousel -->
       <div class="carousel-container">
         <div class="carousel-item" id="maria">
-          <a href="#maria"><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/st-pauls-middle-school-small-1.svg"
-            alt="logo Saints Pauls Middle School"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" /><img
+              src="img/st-pauls-middle-school-small-1.svg"
+              alt="logo Saints Pauls Middle School"
+            />
+          </div>
           <p>
             My staff love the resources and are helpful to their teaching and
             assessment. Most importantly, the impact upon learning for the
@@ -595,17 +600,25 @@
           </p>
           <p>Maria Wilson</p>
           <p>Headteacher, St Pauls Middle School , Northumberland</p>
-          <a href="">Maths Tuition</a>
-          <a href="#catherine"
-            ><img src="img/right-arrow.svg" alt="right arrow"
-          /></a>
+          <a href=""><span>Maths Tuition</span></a>
+          <div class="container-arrows">
+            <a href="#maria"
+              ><img
+                src="img/left-arrow.svg"
+                alt="left arrow"
+                class="arrow" /></a
+            ><a href="#catherine"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
         <div class="carousel-item" id="catherine">
-          <a href="#maria"><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/griffin-park-primary.svg"
-            alt="logo Griffin Park Primary School"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" /><img
+              src="img/griffin-park-primary.svg"
+              alt="logo Griffin Park Primary School"
+            />
+          </div>
           <p>
             Targeted support for the children which is personalised to their own
             level, which helps them to make progress and achieve Age Related
@@ -613,18 +626,26 @@
           </p>
           <p>Catherine Clayton-Young</p>
           <p>Headteacher, Griffin Park Primary School, Blackburn</p>
-          <a href="">One To One Tuition</a>
-          <a href="#mandy"
-            ><img src="img/right-arrow.svg" alt="right arrow"
-          /></a>
+          <a href=""><span>One To One Tuition</span></a>
+          <div class="container-arrows">
+            <a href="#maria"
+              ><img
+                src="img/left-arrow.svg"
+                alt="left arrow"
+                class="arrow" /></a
+            ><a href="#mandy"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
+
         <div class="carousel-item" id="mandy">
-          <a href="#catherine"
-            ><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/Oxley-primary-school.svg"
-            alt="logo Oxley Primary School"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" /><img
+              src="img/Oxley-primary-school.svg"
+              alt="logo Oxley Primary School"
+            />
+          </div>
           <p>
             Third Space fills in little gaps that can really hold children back.
             The customer service is fantastic every time and they couldn't be
@@ -633,32 +654,51 @@
           </p>
           <p>Mandy Spivey</p>
           <p>Maths Coordinator, Oxley Primary School, Leicestershire</p>
-          <a href="">Primary School Tuition</a>
-          <a href="#gemma"
-            ><img src="img/right-arrow.svg" alt="right arrow"
-          /></a>
+          <a href=""><span>Primary School Tuition</span></a>
+          <div class="container-arrows">
+            <a href="#catherine"
+              ><img
+                src="img/left-arrow.svg"
+                alt="left arrow"
+                class="arrow" /></a
+            ><a href="#gemma"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
+
         <div class="carousel-item" id="gemma">
-          <a href="#mandy"><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/Priory-primary.svg"
-            alt="logo Priory Primary School"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" /><img
+              src="img/Priory-primary.svg"
+              alt="logo Priory Primary School"
+            />
+          </div>
           <p>
             Our children all really enjoy taking part in the program and we have
             seen increased confidence and progress in their maths learning.
           </p>
           <p>Gemma Blunt</p>
           <p>Maths Leader, Priory Primary School, Dudley</p>
-          <a href="">Online Tuition for Maths</a>
-          <a href="#abi"><img src="img/right-arrow.svg" alt="right arrow" /></a>
+          <a href=""><span>Online Tuition for Maths</span></a>
+          <div class="container-arrows">
+            <a href="#mandy"
+              ><img
+                src="img/left-arrow.svg"
+                alt="left arrow"
+                class="arrow" /></a
+            ><a href="#abi"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
         <div class="carousel-item" id="abi">
-          <a href="#gemma"><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/holy-trinity.svg"
-            alt="logo Holy Trinity Primary School"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" /><img
+              src="img/holy-trinity.svg"
+              alt="logo Holy Trinity Primary School"
+            />
+          </div>
           <p>
             The 1&#45;to&#45;1 tuition is a great addition to our support for
             pupils receiving Pupil Premium, and the resources are high quality
@@ -666,17 +706,26 @@
           </p>
           <p>Abi Hann</p>
           <p>Deputy Headteacher, Holy Trinity Primary School, Merton</p>
-          <a href="">One To One Tuition</a>
-          <a href="#daniel"
-            ><img src="img/right-arrow.svg" alt="right arrow"
-          /></a>
+          <a href=""><span>One To One Tuition</span></a>
+          <div class="container-arrows">
+            <a href="#gemma"
+              ><img
+                src="img/left-arrow.svg"
+                alt="left arrow"
+                class="arrow" /></a
+            ><a href="#daniel"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
         <div class="carousel-item" id="daniel">
-          <a href="#abi"><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/Choppington.svg"
-            alt="logo Choppington Primary School"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" />
+            <img
+              src="img/Choppington.svg"
+              alt="logo Choppington Primary School"
+            />
+          </div>
           <p>
             There are a number of reasons that I recommend Third Space Learning;
             the resources on the Maths Hub are great, the sessions for the
@@ -685,17 +734,23 @@
           </p>
           <p>Daniel Nelson</p>
           <p>Headteacher, Choppington Primary School, Northumberland</p>
-          <a href="">Primary School Tuition</a>
-          <a href="#angie"
-            ><img src="img/right-arrow.svg" alt="right arrow"
-          /></a>
+          <a href=""><span>Primary School Tuition</span></a>
+          <div class="container-arrows">
+            <a href="#abi"
+              ><img
+                src="img/left-arrow.svg"
+                alt="left arrow"
+                class="arrow" /></a
+            ><a href="#angie"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
         <div class="carousel-item" id="angie">
-          <a href="#daniel"><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/giles-brook-big.jpg"
-            alt="logo Giles Brook Primary"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" />
+            <img src="img/giles-brook-big.jpg" alt="logo Giles Brook Primary" />
+          </div>
           <p>
             A great all round experience. The children love their sessions,
             enjoy working with their tutors and the sessions make a real
@@ -704,15 +759,25 @@
           </p>
           <p>Angie Bailey</p>
           <p>Deputy Headteacher, Giles Brook Primary, Milton Keynes</p>
-          <a href="">Primary School Maths Tutor</a>
-          <a href="#liz"><img src="img/right-arrow.svg" alt="right arrow" /></a>
+          <a href=""><span>Primary School Maths Tutor</span></a>
+          <div class="container-arrows">
+            <a href="#daniel"
+              ><img src="img/left-arrow.svg" alt="left arrow" class="arrow"
+            /></a>
+            <a href="#liz"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
+
         <div class="carousel-item" id="liz">
-          <a href="#angie"><img src="img/left-arrow.svg" alt="left arrow" /></a
-          ><img src="img/quote.svg" alt="Blue quotations" /><img
-            src="img/pevensey-and-westham.svg"
-            alt="logo Pevensy and Westham CofE Primary School"
-          />
+          <div class="container-carousel-img">
+            <img src="img/quote.svg" alt="Blue quotations" />
+            <img
+              src="img/pevensey-and-westham.svg"
+              alt="logo Pevensy and Westham CofE Primary School"
+            />
+          </div>
           <p>
             Children are thoroughly enjoying their sessions and the resources we
             have access to are great. I have already recommended the
@@ -723,8 +788,17 @@
             Year 6 Teacher, Pevensey and Westham CofE Primary School, East
             Sussex
           </p>
-          <a href="">Maths Intervention Programmes</a>
-          <a href="#liz"><img src="img/right-arrow.svg" alt="right arrow" /></a>
+          <a href=""><span>Maths Intervention Programmes</span></a>
+          <div class="container-arrows">
+            <a href="#angie"
+              ><img
+                src="img/left-arrow.svg"
+                alt="left arrow"
+                class="arrow" /></a
+            ><a href="#liz"
+              ><img src="img/right-arrow.svg" alt="right arrow" class="arrow"
+            /></a>
+          </div>
         </div>
       </div>
       <button class="btn btn-blue see-all-case-studies">
@@ -816,33 +890,36 @@
             ><img
               src="img/icon-address.svg"
               alt="icon address"
-              class="icons"
-            />68 Hanbury Street, London E1 5JL</a
+              class="icons icon-address"
+            /><span>68 Hanbury Street, London E1 5JL</span></a
           >
           <a href="mailto:hello@thirdspacelearning.com"
             ><img
               src="img/icon-email.svg"
               alt="icon email"
               class="icons"
-            />hello@thirdspacelearning.com</a
+            /><span>hello@thirdspacelearning.com</span></a
           >
           <a href="tel:02037710095"
-            ><img src="img/icon-phone.svg" alt="icon phone" class="icons" />0203
-            771 0095</a
+            ><img
+              src="img/icon-phone.svg"
+              alt="icon phone"
+              class="icons"
+            /><span> 0203 771 0095</span></a
           >
           <a href="#"
             ><img
               src="img/icon-talk.svg"
               alt="icon messaging"
               class="icons"
-            />Contact us</a
+            /><span>Contact us</span></a
           >
           <a href="#"
             ><img
               src="img/icon-talk.svg"
               alt="icon messaging"
               class="icons"
-            />Press enquiries</a
+            /><span>Press enquiries</span></a
           >
         </div>
         <div>
@@ -912,7 +989,9 @@
           <ul>
             <li><a href="#">GCSE Maths Revision</a></li>
             <li><a href="#">Maths Intervention Programmes</a></li>
-            <li><a href="#">Online Maths Tuition</a></li>
+            <li>
+              <a href="#">Online Maths Tuition</a>
+            </li>
             <li><a href="#">Maths Tuition</a></li>
             <li><a href="#">One To One Tuition</a></li>
             <li><a href="#">Primary School Tuition</a></li>

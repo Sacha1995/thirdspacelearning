@@ -11,6 +11,11 @@
           SCSS
 **************************
 */
+.container-ready .btn, .container-working img, .see-all-case-studies, .maths-tutoring .btn {
+  display: block;
+  margin: 0px auto;
+}
+
 /*
 ************END***********
 */
@@ -294,7 +299,7 @@ p > .speaker {
 **************************
 */
 .consistent {
-  background-color: #fbfbfc;
+  background-color: #f9f8f8;
   padding: 30px 30px;
   padding-bottom: 250px;
 }
@@ -314,6 +319,10 @@ p > .speaker {
   font-size: 20px;
   margin-bottom: 15px;
   line-height: 30px;
+}
+
+input:checked ~ a {
+  text-decoration: underline;
 }
 
 .consistent a:hover {
@@ -363,13 +372,12 @@ p > .speaker {
 .free-secondary,
 .premium-primary {
   position: absolute;
-  opacity: 0;
   visibility: hidden;
   background-color: white;
 }
 
 #cost-effective {
-  opacity: 1;
+  visibility: visible;
 }
 
 .cost-effective:target,
@@ -381,12 +389,8 @@ p > .speaker {
   visibility: visible;
 }
 
-.consistent form #underline1:checked ~ #label-underline1,
-.consistent form #underline2:checked ~ #label-underline2,
-.consistent form #underline3:checked ~ #label-underline3,
-.consistent form #underline4:checked ~ #label-underline4 {
+label:checked a {
   text-decoration: underline;
-  text-decoration-color: #2779f5;
 }
 
 /*
@@ -408,11 +412,6 @@ h2 {
   font-size: 20px;
   text-align: center;
 }
-.maths-tutoring .btn {
-  display: block;
-  margin: 0px auto;
-}
-
 /*
 ************END***********
 */
@@ -483,8 +482,9 @@ Why schools like yours choose TSL
 **************************
 */
 .turning-cards {
-  width: 400px;
+  max-width: 500px;
   height: 300px;
+  width: 100%;
   perspective: 1000px;
   margin: 0px auto 10px auto;
   cursor: pointer;
@@ -511,36 +511,42 @@ Why schools like yours choose TSL
   position: absolute;
   width: 100%;
   height: 100%;
-  /* Safari */
   backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Style the front side (fallback if image is missing) */
-.front {
+/* Style the front side */
+.front,
+.back {
   background-color: white;
-  border: grey solid 1px;
   border-radius: 10px;
   padding: 40px;
-  box-shadow: 0px 3px 3px 0px #e1e1e1;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
 }
 
 /* Style the back side */
 .back {
-  background-color: white;
-  border: grey solid 1px;
-  border-radius: 10px;
-  padding: 40px;
-  box-shadow: 0px 3px 3px 0px #e1e1e1;
   transform: rotateY(180deg);
 }
 
-.turning-cards img {
-  height: 20px;
-  width: auto;
+.front img {
+  align-self: flex-end;
+  height: 19px;
+  width: 18px;
+}
+.front p {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 0px;
 }
 
 .turning-cards .number {
-  font-size: 6rem;
+  font-size: 45px;
+  line-height: 140px;
+  margin-bottom: 0px;
 }
 
 .schools-supported .number {
@@ -559,22 +565,56 @@ Why schools like yours choose TSL
           carousel
 **************************
 */
+.container-arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  left: 15%;
+  margin: 0px auto;
+  width: 70%;
+  z-index: 5;
+}
+.container-arrows a {
+  position: relative;
+  height: 48px;
+  width: 48px;
+  background: white;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+  padding: 10px;
+  border-radius: 100%;
+}
+.container-arrows .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 19px;
+  width: 13px;
+}
+
 .carousel-item {
-  margin: 20px;
-  height: 600px;
+  width: 90%;
+  height: 420px;
   background-color: white;
-  border: grey solid 1px;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 40px;
-  box-shadow: 0px 3px 3px 0px #e1e1e1;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  visibility: hidden;
 }
 
 #maria {
-  display: block;
+  display: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  visibility: visible;
 }
 
 #maria:target,
@@ -586,17 +626,64 @@ Why schools like yours choose TSL
 #angie:target,
 #liz:target {
   z-index: 2;
-  display: block;
+  display: absolute;
+  visibility: visible;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   scroll-margin-top: 300px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
 }
 
 .carousel-item img {
   height: 50px;
 }
 
-.carousel-container {
-  position: relative;
-  margin-bottom: 700px;
+.container-carousel-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.carousel-item p {
+  text-align: left;
+  font-size: 17px;
+}
+
+.carousel-item p:nth-child(3) {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.carousel-item p:nth-child(4) {
+  font-size: 13px;
+}
+
+.carousel-item a {
+  display: block;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 15px;
+}
+
+.carousel-item a span {
+  background-color: #e3f2ff;
+  padding: 0 4px;
+}
+
+.carousel-item a:hover {
+  text-decoration: underline;
+}
+
+.see-all-case-studies {
+  margin-bottom: 20px;
 }
 
 /*
@@ -604,7 +691,7 @@ Why schools like yours choose TSL
 */
 /*
 **************************
-          name
+Working in partnership with the education community
 **************************
 */
 .container-working {
@@ -613,6 +700,10 @@ Why schools like yours choose TSL
   margin: 0px auto 20px auto;
   padding: 15px;
   border-radius: 24px;
+}
+
+.container-working p {
+  padding: 10px 0 40px 0;
 }
 
 /*
@@ -646,17 +737,50 @@ main {
           footer
 **************************
 */
+footer {
+  padding: 50px;
+  background-color: #f9f8f8;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+footer p {
+  margin-bottom: 0px;
+  text-align: left;
+}
+footer p small {
+  font-size: 15px;
+}
+
+footer ul li ul {
+  margin-bottom: 30px;
+}
+
 footer .logo-footer {
   width: 173px;
 }
 
 .icons {
-  height: 15px;
+  width: 15px;
   display: inline;
+}
+
+.icon-address {
+  height: 16px;
+  margin-bottom: -3px;
+  width: auto;
 }
 
 .contact a {
   display: block;
+}
+.contact a span {
+  padding: 5px;
 }
 
 .social-media {
