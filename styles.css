@@ -639,38 +639,6 @@ Why schools like yours choose TSL
   visibility: visible;
 }
 
-#maria .container-arrows label {
-  background: red;
-}
-
-#catherine .container-arrows label {
-  background: orange;
-}
-
-#mandy .container-arrows label {
-  background: yellow;
-}
-
-#gemma .container-arrows label {
-  background: green;
-}
-
-#abi .container-arrows label {
-  background: blue;
-}
-
-#daniel .container-arrows label {
-  background: purple;
-}
-
-#angie .container-arrows label {
-  background: pink;
-}
-
-#liz .container-arrows label {
-  background: black;
-}
-
 #catherinee:checked ~ #catherine,
 #mandyy:checked ~ #mandy,
 #gemmaa:checked ~ #gemma,
