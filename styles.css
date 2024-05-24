@@ -626,15 +626,16 @@ Why schools like yours choose TSL
   position: absolute;
   top: 0;
   left: 30px;
-  visibility: hidden;
+  display: none;
 }
 
 #maria {
+  display: inherit;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -1;
+  z-index: 2;
   visibility: visible;
 }
 
@@ -670,7 +671,24 @@ Why schools like yours choose TSL
   background: black;
 }
 
-#for-catherine:checked ~ #catherine,
+#catherinee:checked ~ #catherine,
+#mandyy:checked ~ #mandy,
+#gemmaa:checked ~ #gemma,
+#abii:checked ~ #abi,
+#daniell:checked ~ #daniel,
+#angiee:checked ~ #angie,
+#lizz:checked ~ #liz {
+  z-index: 2;
+  position: absolute;
+  display: inherit;
+  visibility: visible;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* transition: all 2s ease-in;  */
+}
+
+/* #for-catherine:checked ~ #catherine,
 #for-mandy:checked ~ #mandy,
 #for-gemma:checked ~ #gemma,
 #for-abi:checked ~ #abi,
@@ -684,7 +702,7 @@ Why schools like yours choose TSL
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  /* transition: all 2s ease-in; */
+  transition: all 2s ease-in; 
 }
 
 #back-maria:checked ~ #maria,
@@ -700,7 +718,7 @@ Why schools like yours choose TSL
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 .carousel-container input {
   display: block;
