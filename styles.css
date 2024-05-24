@@ -75,6 +75,7 @@ h4 {
 
 .btn-green:hover {
   background-color: #0a8a67;
+  font-weight: bold;
 }
 
 .btn-darkblue {
@@ -85,6 +86,18 @@ h4 {
 
 .btn-darkblue:hover {
   background-color: #050d2b;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #757575;
+  border-radius: 10px;
 }
 
 /*
@@ -290,6 +303,34 @@ p > .speaker {
   align-items: flex-start;
 }
 
+.request-quote-intro {
+  animation: btnslideinleft 1s;
+}
+
+@keyframes btnslideinleft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.how-it-works {
+  animation: btnslideinright 1s;
+}
+
+@keyframes btnslideinright {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 /*
 ************END***********
 */
@@ -299,7 +340,7 @@ p > .speaker {
 **************************
 */
 .consistent {
-  background-color: #f9f8f8;
+  background-color: rgb(249, 248, 248);
   padding: 30px 30px;
 }
 .consistent P {
@@ -370,15 +411,16 @@ input:checked + label {
   position: relative;
 }
 
-.cost-effective,
-.free-primary,
-.free-secondary,
-.premium-primary {
+#cost-effective,
+#free-primary,
+#free-secondary,
+#premium-primary {
   position: absolute;
   top: 164px;
   left: 0px;
   visibility: hidden;
   background-color: white;
+  opacity: 0;
 }
 
 #cost-effective {
@@ -399,8 +441,8 @@ input:checked label {
 #underline3:checked ~ #free-secondary,
 #underline4:checked ~ #premium-primary {
   opacity: 1;
-  scroll-margin-top: 500px;
   visibility: visible;
+  transition: all 0.2s ease-in;
 }
 
 /*
@@ -592,9 +634,15 @@ Why schools like yours choose TSL
   height: 48px;
   width: 48px;
   background: white;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
   padding: 10px;
   border-radius: 100%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.container-arrows .label-arrow-maria {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
 }
 .container-arrows .arrow {
   position: absolute;
@@ -611,43 +659,65 @@ Why schools like yours choose TSL
   background-color: white;
   border-radius: 30px;
   padding: 40px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
-  left: 30px;
-  display: none;
+  left: 28px;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 #maria {
-  display: inherit;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  visibility: visible;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-#catherinee:checked ~ #catherine,
-#mandyy:checked ~ #mandy,
-#gemmaa:checked ~ #gemma,
-#abii:checked ~ #abi,
-#daniell:checked ~ #daniel,
-#angiee:checked ~ #angie,
-#lizz:checked ~ #liz {
-  z-index: 2;
+#catherine-next:checked ~ #catherine,
+#mandy-next:checked ~ #mandy,
+#gemma-next:checked ~ #gemma,
+#abi-next:checked ~ #abi,
+#daniel-next:checked ~ #daniel,
+#angie-next:checked ~ #angie,
+#liz-next:checked ~ #liz {
+  z-index: 3;
   position: absolute;
   display: inherit;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  /* transition: all 2s ease-in;  */
 }
 
-.carousel-container input {
-  display: block;
+@keyframes slideinright {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+#maria-back:checked ~ #maria,
+#catherine-back:checked ~ #catherine,
+#mandy-back:checked ~ #mandy,
+#gemma-back:checked ~ #gemma,
+#abi-back:checked ~ #abi,
+#daniel-back:checked ~ #daniel,
+#angie-back:checked ~ #angie {
+  z-index: 3;
+  position: absolute;
+  display: inherit;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+@keyframes slideinleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .carousel-container {
   position: relative;
   width: 100%;
@@ -700,37 +770,6 @@ Why schools like yours choose TSL
   margin-bottom: 20px;
 }
 
-/* #for-catherine:checked ~ #catherine,
-#for-mandy:checked ~ #mandy,
-#for-gemma:checked ~ #gemma,
-#for-abi:checked ~ #abi,
-#for-daniel:checked ~ #daniel,
-#for-angie:checked ~ #angie,
-#for-liz:checked ~ #liz,
-#for-liz2:checked ~ #liz2 {
-  z-index: 2;
-  position: absolute;
-  visibility: visible;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 2s ease-in; 
-}
-
-#back-maria:checked ~ #maria,
-#back-catherine:checked ~ #catherine,
-#back-mandy:checked ~ #mandy,
-#back-gemma:checked ~ #gemma,
-#back-abi:checked ~ #abi,
-#back-daniel:checked ~ #daniel,
-#back-angie:checked ~ #angie {
-  z-index: 3;
-  position: absolute;
-  visibility: visible;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-} */
 /*
 ************END***********
 */
@@ -751,6 +790,45 @@ Working in partnership with the education community
   padding: 10px 0 40px 0;
 }
 
+.card-NTP {
+  animation: comeup 2s ease-in-out both;
+}
+
+.card-rs {
+  animation: comeup 2s ease-in-out both;
+  animation-delay: 1s;
+}
+
+.card-UCL {
+  animation: comeup 2s ease-in-out both;
+  animation-delay: 2s;
+}
+
+.card-wwfcsc {
+  animation: comeup 2s ease-in-out both;
+  animation-delay: 3s;
+}
+
+.card-CFEY {
+  animation: comeup 2s ease-in-out both;
+  animation-delay: 4s;
+}
+
+.card-IDS {
+  animation: comeup 2s ease-in-out both;
+  animation-delay: 5s;
+}
+
+@keyframes comeup {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*
 ************END***********
 */
@@ -784,7 +862,7 @@ main {
 */
 footer {
   padding: 50px;
-  background-color: #f9f8f8;
+  background-color: rgb(249, 248, 248);
 }
 footer a:hover {
   text-decoration: underline;
