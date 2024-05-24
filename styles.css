@@ -11,10 +11,7 @@
           SCSS
 **************************
 */
-.container-ready .btn,
-.container-working img,
-.see-all-case-studies,
-.maths-tutoring .btn {
+.container-ready .btn, .container-working img, .see-all-case-studies, .maths-tutoring .btn {
   display: block;
   margin: 0px auto;
 }
@@ -369,11 +366,6 @@ input:checked + label {
   display: inline;
 }
 
-/* .container-consistent > div {
-  height: 200px;
-  width: auto;
-} */
-
 .container {
   position: relative;
 }
@@ -542,8 +534,7 @@ Why schools like yours choose TSL
   background-color: white;
   border-radius: 10px;
   padding: 40px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12),
-    0px 0px 2px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
 }
 
 /* Style the back side */
@@ -601,12 +592,10 @@ Why schools like yours choose TSL
   height: 48px;
   width: 48px;
   background: white;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
-    0px 2px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
   padding: 10px;
   border-radius: 100%;
 }
-
 .container-arrows .arrow {
   position: absolute;
   top: 50%;
@@ -649,44 +638,11 @@ Why schools like yours choose TSL
   z-index: 2;
   position: absolute;
   display: inherit;
-  visibility: visible;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   /* transition: all 2s ease-in;  */
 }
-
-/* #for-catherine:checked ~ #catherine,
-#for-mandy:checked ~ #mandy,
-#for-gemma:checked ~ #gemma,
-#for-abi:checked ~ #abi,
-#for-daniel:checked ~ #daniel,
-#for-angie:checked ~ #angie,
-#for-liz:checked ~ #liz,
-#for-liz2:checked ~ #liz2 {
-  z-index: 2;
-  position: absolute;
-  visibility: visible;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 2s ease-in; 
-}
-
-#back-maria:checked ~ #maria,
-#back-catherine:checked ~ #catherine,
-#back-mandy:checked ~ #mandy,
-#back-gemma:checked ~ #gemma,
-#back-abi:checked ~ #abi,
-#back-daniel:checked ~ #daniel,
-#back-angie:checked ~ #angie {
-  z-index: 3;
-  position: absolute;
-  visibility: visible;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-} */
 
 .carousel-container input {
   display: block;
@@ -744,6 +700,37 @@ Why schools like yours choose TSL
   margin-bottom: 20px;
 }
 
+/* #for-catherine:checked ~ #catherine,
+#for-mandy:checked ~ #mandy,
+#for-gemma:checked ~ #gemma,
+#for-abi:checked ~ #abi,
+#for-daniel:checked ~ #daniel,
+#for-angie:checked ~ #angie,
+#for-liz:checked ~ #liz,
+#for-liz2:checked ~ #liz2 {
+  z-index: 2;
+  position: absolute;
+  visibility: visible;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 2s ease-in; 
+}
+
+#back-maria:checked ~ #maria,
+#back-catherine:checked ~ #catherine,
+#back-mandy:checked ~ #mandy,
+#back-gemma:checked ~ #gemma,
+#back-abi:checked ~ #abi,
+#back-daniel:checked ~ #daniel,
+#back-angie:checked ~ #angie {
+  z-index: 3;
+  position: absolute;
+  visibility: visible;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+} */
 /*
 ************END***********
 */
@@ -753,8 +740,7 @@ Working in partnership with the education community
 **************************
 */
 .container-working {
-  box-shadow: 0px 8.25px 11.25px rgba(0, 0, 0, 0.2),
-    0px 6.75px 34.5px rgba(0, 0, 0, 0.12), 0px 18px 28.5px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 8.25px 11.25px rgba(0, 0, 0, 0.2), 0px 6.75px 34.5px rgba(0, 0, 0, 0.12), 0px 18px 28.5px rgba(0, 0, 0, 0.14);
   width: 90%;
   margin: 0px auto 20px auto;
   padding: 15px;
@@ -848,7 +834,6 @@ footer .logo-footer {
   display: inline;
 }
 
-/* flags */
 .container-flag {
   border-radius: 45px;
   height: 50px;
@@ -884,6 +869,7 @@ footer .logo-footer {
 .flags {
   position: relative;
 }
+
 #checkbox-america:checked ~ .british-flag {
   visibility: hidden;
 }
@@ -914,4 +900,4 @@ footer .logo-footer {
 
 /*
 ************END***********
-*/ /*# sourceMappingURL=styles.css.map */
+*//*# sourceMappingURL=styles.css.map */
