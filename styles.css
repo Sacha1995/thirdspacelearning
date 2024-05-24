@@ -810,6 +810,7 @@ footer .logo-footer {
   display: inline;
 }
 
+/* flags */
 .container-flag {
   border-radius: 45px;
   height: 50px;
@@ -825,7 +826,7 @@ footer .logo-footer {
   height: 30px;
 }
 
-.container-flag-american {
+.checkbox-america {
   display: none;
 }
 
@@ -833,8 +834,43 @@ footer .logo-footer {
   cursor: pointer;
 }
 
-#drop-down:checked ~ .container-flag-american {
-  display: flex;
+#drop-down:checked ~ .checkbox-america {
+  display: inherit;
+}
+
+#drop-down:checked ~ label .british-container-flag {
+  border: #9cbef8 solid 2px;
+}
+
+.flags {
+  position: relative;
+}
+#checkbox-america:checked ~ .british-flag {
+  visibility: hidden;
+}
+
+.british-flag {
+  width: 50px;
+  display: block;
+  height: auto;
+}
+
+#checkbox-america:checked ~ .checkbox-america {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  display: inline;
+  position: absolute;
+  top: 24px;
+  left: 55px;
 }
 
 /*
