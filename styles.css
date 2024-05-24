@@ -836,6 +836,7 @@ footer .logo-footer {
 
 #drop-down:checked ~ .checkbox-america {
   display: inherit;
+  position: absolute;
 }
 
 #drop-down:checked ~ label .british-container-flag {
