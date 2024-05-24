@@ -596,7 +596,7 @@ Why schools like yours choose TSL
   width: 70%;
   z-index: 5;
 }
-.container-arrows a {
+.container-arrows label {
   position: relative;
   height: 48px;
   width: 48px;
@@ -606,6 +606,7 @@ Why schools like yours choose TSL
   padding: 10px;
   border-radius: 100%;
 }
+
 .container-arrows .arrow {
   position: absolute;
   top: 50%;
@@ -624,34 +625,85 @@ Why schools like yours choose TSL
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 30px;
   visibility: hidden;
 }
 
 #maria {
-  display: absolute;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: -1;
   visibility: visible;
 }
 
-#maria:target,
-#catherine:target,
-#mandy:target,
-#gemma:target,
-#abi:target,
-#daniel:target,
-#angie:target,
-#liz:target {
+#maria .container-arrows label {
+  background: red;
+}
+
+#catherine .container-arrows label {
+  background: orange;
+}
+
+#mandy .container-arrows label {
+  background: yellow;
+}
+
+#gemma .container-arrows label {
+  background: green;
+}
+
+#abi .container-arrows label {
+  background: blue;
+}
+
+#daniel .container-arrows label {
+  background: purple;
+}
+
+#angie .container-arrows label {
+  background: pink;
+}
+
+#liz .container-arrows label {
+  background: black;
+}
+
+#for-catherine:checked ~ #catherine,
+#for-mandy:checked ~ #mandy,
+#for-gemma:checked ~ #gemma,
+#for-abi:checked ~ #abi,
+#for-daniel:checked ~ #daniel,
+#for-angie:checked ~ #angie,
+#for-liz:checked ~ #liz,
+#for-liz2:checked ~ #liz2 {
   z-index: 2;
-  display: absolute;
+  position: absolute;
   visibility: visible;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  scroll-margin-top: 300px;
+  /* transition: all 2s ease-in; */
+}
+
+#back-maria:checked ~ #maria,
+#back-catherine:checked ~ #catherine,
+#back-mandy:checked ~ #mandy,
+#back-gemma:checked ~ #gemma,
+#back-abi:checked ~ #abi,
+#back-daniel:checked ~ #daniel,
+#back-angie:checked ~ #angie {
+  z-index: 3;
+  position: absolute;
+  visibility: visible;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-container input {
+  display: block;
 }
 
 .carousel-container {
