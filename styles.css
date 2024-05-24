@@ -11,7 +11,10 @@
           SCSS
 **************************
 */
-.container-ready .btn, .container-working img, .see-all-case-studies, .maths-tutoring .btn {
+.container-ready .btn,
+.container-working img,
+.see-all-case-studies,
+.maths-tutoring .btn {
   display: block;
   margin: 0px auto;
 }
@@ -301,7 +304,6 @@ p > .speaker {
 .consistent {
   background-color: #f9f8f8;
   padding: 30px 30px;
-  padding-bottom: 250px;
 }
 .consistent P {
   text-align: left;
@@ -313,18 +315,25 @@ p > .speaker {
   display: inline;
 }
 
-.consistent a {
+.consistent label {
   color: #2779f5;
   display: block;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   line-height: 30px;
 }
 
-input:checked ~ a {
+input {
+  /* visibility: hidden;
+  transform: translateX(-100px); */
+  display: none;
+}
+
+input:checked + label {
   text-decoration: underline;
 }
 
+.consistent label:hover,
 .consistent a:hover {
   color: #0056b3;
   text-decoration: underline;
@@ -333,12 +342,13 @@ input:checked ~ a {
 .container-links {
   display: block;
   background-color: white;
-  height: 60px;
+  height: 80px;
   width: 85vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 30px;
 }
 
 .container-links a {
@@ -349,7 +359,8 @@ input:checked ~ a {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  line-height: 2px;
+  line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .right-arrow {
@@ -358,12 +369,12 @@ input:checked ~ a {
   display: inline;
 }
 
-.container-consistent > div {
+/* .container-consistent > div {
   height: 200px;
   width: auto;
-}
+} */
 
-.container-consistent {
+.container {
   position: relative;
 }
 
@@ -372,6 +383,8 @@ input:checked ~ a {
 .free-secondary,
 .premium-primary {
   position: absolute;
+  top: 164px;
+  left: 0px;
   visibility: hidden;
   background-color: white;
 }
@@ -380,17 +393,22 @@ input:checked ~ a {
   visibility: visible;
 }
 
-.cost-effective:target,
-.free-primary:target,
-.free-secondary:target,
-.premium-primary:target {
+input:checked label {
+  text-decoration: underline;
+}
+
+.container-form {
+  position: relative;
+  height: 500px;
+}
+
+#underline1:checked ~ #cost-effective,
+#underline2:checked ~ #free-primary,
+#underline3:checked ~ #free-secondary,
+#underline4:checked ~ #premium-primary {
   opacity: 1;
   scroll-margin-top: 500px;
   visibility: visible;
-}
-
-label:checked a {
-  text-decoration: underline;
 }
 
 /*
@@ -524,7 +542,8 @@ Why schools like yours choose TSL
   background-color: white;
   border-radius: 10px;
   padding: 40px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 0px 2px rgba(0, 0, 0, 0.14);
 }
 
 /* Style the back side */
@@ -582,7 +601,8 @@ Why schools like yours choose TSL
   height: 48px;
   width: 48px;
   background: white;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
   padding: 10px;
   border-radius: 100%;
 }
@@ -695,7 +715,8 @@ Working in partnership with the education community
 **************************
 */
 .container-working {
-  box-shadow: 0px 8.25px 11.25px rgba(0, 0, 0, 0.2), 0px 6.75px 34.5px rgba(0, 0, 0, 0.12), 0px 18px 28.5px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 8.25px 11.25px rgba(0, 0, 0, 0.2),
+    0px 6.75px 34.5px rgba(0, 0, 0, 0.12), 0px 18px 28.5px rgba(0, 0, 0, 0.14);
   width: 90%;
   margin: 0px auto 20px auto;
   padding: 15px;
@@ -818,4 +839,4 @@ footer .logo-footer {
 
 /*
 ************END***********
-*//*# sourceMappingURL=styles.css.map */
+*/ /*# sourceMappingURL=styles.css.map */
