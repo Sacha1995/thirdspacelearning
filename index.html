@@ -130,7 +130,7 @@
                     <ul>
                       <li><a href="#">Impact</a></li>
                       <li><a href="#">Case Studies</a></li>
-                      <li><a href="#">Our Studies</a></li>
+                      <li><a href="#">Our Tutors</a></li>
                     </ul>
                   </li>
                   <li class="dropdown Resources">
@@ -152,10 +152,12 @@
                           >&#45; GCSE Maths Revision Guide &#40;Free&#41;</a
                         >
                       </li>
-                      <li><a href="#">&#45; Maths Papers &#40;Free&#41;</a></li>
+                      <li>
+                        <a href="#">&#45; GCSE Maths Papers &#40;Free&#41;</a>
+                      </li>
                       <li>
                         <a href="#"
-                          >&#45; Maths Revision Resources &#40;Free&#41;</a
+                          >&#45; GCSE Maths Revision Resources &#40;Free&#41;</a
                         >
                       </li>
                       <li><a href="#">Senior Leader Zone &#40;Free&#41;</a></li>
@@ -172,12 +174,12 @@
                   </li>
                   <li class="dropdown blog">Blog</li>
                   <li class="dropdown">
-                    <button class="btn btn-yellow request-quote">
+                    <button class="btn btn-yellow request-quote-btn">
                       Request a quote
                     </button>
                   </li>
                   <li class="dropdown">
-                    <button class="btn btn-blue log-in">Log in</button>
+                    <button class="btn btn-blue log-in-btn">Log in</button>
                   </li>
                 </ul>
               </div>
@@ -226,7 +228,9 @@
           <button class="btn btn-yellow request-quote-intro">
             Request a quote
           </button>
-          <button class="btn btn-blue how-it-works">How it works</button>
+          <button class="btn btn-blue how-it-works-btn-intro">
+            How it works
+          </button>
         </div>
       </section>
       <!-- consistent and reliable maths support for schools -->
@@ -254,28 +258,9 @@
                 src="./img/looking-glass.svg"
                 alt="Looking glass"
                 class="looking-glass"
-              />Cost-effective-DFE-approved tutoring</label
+              /><span>Cost-effective-DFE-approved tutoring</span></label
             >
-            <div class="cost-effective" id="cost-effective">
-              <img
-                src="img/img-consistent-reliable-support.webp"
-                alt="Picture of screens with math"
-              />
-              <div class="container-links">
-                <a href=""
-                  >Explore primary tutoring programmes<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
-                <a href=""
-                  >Explore secondary tutoring programmes<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
-              </div>
-            </div>
+
             <input
               type="radio"
               id="underline2"
@@ -286,28 +271,9 @@
                 src="./img/looking-glass.svg"
                 alt="Looking glass"
                 class="looking-glass"
-              />Free primary maths resources</label
+              /><span>Free primary maths resources</span></label
             >
-            <div class="free-primary" id="free-primary">
-              <img
-                src="img/free.webp"
-                alt="Picture of screens with free worksheets"
-              />
-              <div class="container-links">
-                <a href=""
-                  >Explore all free primary resources<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
-                <a href=""
-                  >Already have an account? Log in here<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
-              </div>
-            </div>
+
             <input
               type="radio"
               id="underline3"
@@ -318,28 +284,9 @@
                 src="./img/looking-glass.svg"
                 alt="Looking glass"
                 class="looking-glass"
-              />Free secondary maths resources</label
+              /><span>Free secondary maths resources</span></label
             >
-            <div class="free-secondary" id="free-secondary">
-              <img
-                src="img/free-secondary-maths-resources.webp"
-                alt="Picture of free worksheets"
-              />
-              <div class="container-links">
-                <a href=""
-                  >Explore free KS3 maths resources<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
-                <a href=""
-                  >Explore free GCSE maths resources<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
-              </div>
-            </div>
+
             <input
               type="radio"
               id="underline4"
@@ -350,26 +297,140 @@
                 src="./img/looking-glass.svg"
                 alt="Looking glass"
                 class="looking-glass"
-              />Premium primary maths resources and CPD</label
+              /><span>Premium primary maths resources and CPD</span></label
             >
-            <div class="premium-primary" id="premium-primary">
-              <img
-                src="img/premium-primary-maths-resources-and-CPD.webp"
-                alt="Cards with worksheets"
-              />
-              <div class="container-links">
-                <a href=""
-                  >Explore all premium primary resources<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
-                <a href=""
-                  >View resource subscription plans and pricing<img
-                    src="img/right-arrow.svg"
-                    alt="arrow pointing right"
-                    class="right-arrow"
-                /></a>
+            <div class="container-changing-pictures">
+              <div class="cost-effective" id="cost-effective">
+                <picture>
+                  <source
+                    media="(max-width: 300px)"
+                    src="./img/dfe-approved-tutoring-programmes-1-1-300x119.png" />
+                  <source
+                    media="(min-width: 301px)"
+                    src="./img/dfe-approved-tutoring-programmes-1-1-768x304.png" />
+                  <source
+                    media="(min-width: 768px)"
+                    src="./img/dfe-approved-tutoring-programmes-1-1-1024x405.png" />
+                  <source
+                    media="(min-width: 1024px)"
+                    src="./img/dfe-approved-tutoring-programmes-1-1.png" />
+                  <img
+                    src="img/img-consistent-reliable-support.webp"
+                    alt="Picture of screens with math"
+                /></picture>
+                <div class="container-links">
+                  <a href=""
+                    >Explore primary tutoring programmes<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                  <a href=""
+                    >Explore secondary tutoring programmes<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                </div>
+              </div>
+              <div class="free-primary" id="free-primary">
+                <picture>
+                  <source
+                    media="(max-width: 300px)"
+                    src="./img/Free-primary-maths-resources-1-1-300x119.png" />
+                  <source
+                    media="(min-width: 301px)"
+                    src="./img/Free-primary-maths-resources-1-1-768x303.png" />
+                  <source
+                    media="(min-width: 768px)"
+                    src="./img/Free-primary-maths-resources-1-1-1024x405.png" />
+                  <source
+                    media="(min-width: 1024px)"
+                    src="./img/Free-primary-maths-resources-1-1.png" />
+                  <img
+                    src="img/free.webp"
+                    alt="Picture of screens with free worksheets"
+                /></picture>
+                <div class="container-links">
+                  <a href=""
+                    >Explore all free primary resources<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                  <a href=""
+                    >Already have an account? Log in here<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                </div>
+              </div>
+              <div class="free-secondary" id="free-secondary">
+                <picture>
+                  <source
+                    media="(max-width: 300px)"
+                    src="./img/free-gcse-maths-resources--300x119.png" />
+                  <source
+                    media="(min-width: 301px)"
+                    src="./img/free-gcse-maths-resources--768x304.png" />
+                  <source
+                    media="(min-width: 768px)"
+                    src="./img/free-gcse-maths-resources--1024x405.png" />
+                  <source
+                    media="(min-width: 1024px)"
+                    src="./img/free-gcse-maths-resources-.png" />
+                  <img
+                    src="img/free-secondary-maths-resources.webp"
+                    alt="Picture of free worksheets"
+                /></picture>
+                <div class="container-links">
+                  <a href=""
+                    >Explore free KS3 maths resources<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                  <a href=""
+                    >Explore free GCSE maths resources<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                </div>
+              </div>
+              <div class="premium-primary" id="premium-primary">
+                <picture>
+                  <source
+                    media="(max-width: 300px)"
+                    src="./img/Premium-primary-maths-resources-and-cpd-1-1-300x119.png" />
+                  <source
+                    media="(min-width: 301px)"
+                    src="./img/Premium-primary-maths-resources-and-cpd-1-1-768x303.png" />
+                  <source
+                    media="(min-width: 768px)"
+                    src="./img/Premium-primary-maths-resources-and-cpd-1-1-1024x405.png" />
+                  <source
+                    media="(min-width: 1024px)"
+                    src="./img/Premium-primary-maths-resources-and-cpd-1-1.png" />
+                  <img
+                    src="img/premium-primary-maths-resources-and-CPD.webp"
+                    alt="Cards with worksheets"
+                /></picture>
+                <div class="container-links">
+                  <a href=""
+                    >Explore all premium primary resources<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                  <a href=""
+                    >View resource subscription plans and pricing<img
+                      src="img/right-arrow.svg"
+                      alt="arrow pointing right"
+                      class="right-arrow"
+                  /></a>
+                </div>
               </div>
             </div>
           </form>
@@ -379,10 +440,20 @@
       <section class="maths-tutoring">
         <h2>Maths tutoring programmes trusted by 4,000 schools since 2013</h2>
         <div>
-          <img
-            src="img/boost-ks2-progress.webp"
-            alt="Teacher explaining fractions online"
-          />
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/boost-ks2-progress-in-maths-300x228.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/boost-ks2-progress-in-maths.png"
+            />
+            <img
+              src="img/boost-ks2-progress.webp"
+              alt="Teacher explaining fractions online"
+            />
+          </picture>
           <h3>Boost KS2 progress</h3>
           <p>
             Address gaps from Year 1-6, build arithmetic and reasoning skills
@@ -391,10 +462,24 @@
           <button class="btn btn-blue view-ks2">View KS2 programmes</button>
         </div>
         <div>
-          <img
-            src="img/Year-7-programme-slide-image.webp"
-            alt="Teacher explaining decimals online"
-          />
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/Year-7-programme-slide-image-300x228.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/Year-7-programme-slide-image-768x583.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              src="./img/Year-7-programme-slide-image.png"
+            />
+            <img
+              src="img/Year-7-programme-slide-image.webp"
+              alt="Teacher explaining decimals online"
+            />
+          </picture>
           <h3>Ease KS3 transition</h3>
           <p>
             Help ease the transition for Year 7 students who are struggling to
@@ -405,10 +490,24 @@
           </button>
         </div>
         <div>
-          <img
-            src="img/GCSE-programme.webp"
-            alt="Teacher explaining angles online"
-          />
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/GCSE-revision-slide-image-2-300x228.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/GCSE-revision-slide-image-2-768x583.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              src="./img/GCSE-revision-slide-image-2.png"
+            />
+            <img
+              src="img/GCSE-programme.webp"
+              alt="Teacher explaining angles online"
+            />
+          </picture>
           <h3>Prepare for GCSEs</h3>
           <p>
             Provide targeted revision opportunities to help more students
@@ -431,11 +530,21 @@
       <!-- Why schools like yours choose TSL -->
       <section class="why">
         <h2>Why schools like yours choose Third Space Learning</h2>
-        <div>
-          <img
-            src="img/reach-more-pupils-at-once.webp"
-            alt="Overview of planned sessions"
-          />
+        <div class="reach-more-pupils">
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/Choose-your-third-space-learning-students-300x231.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/Choose-your-third-space-learning-students.png"
+            />
+            <img
+              src="img/reach-more-pupils-at-once.webp"
+              alt="Overview of planned sessions"
+            />
+          </picture>
           <h3>Reach more pupils at once</h3>
           <p>
             You <b>choose which pupils</b> need support&#59; we&#39;ll provide a
@@ -448,14 +557,28 @@
             personalised objectives so everyone is at the right level.
           </q>
           <p>Jane Powell, Assistant Head, Barton Seagrave Primary School</p>
-          <button class="btn btn-blue how-it-works">How it works</button>
+          <button class="btn btn-blue how-it-works-btn">How it works</button>
         </div>
 
-        <div>
-          <img
-            src="img/address-individual-gaps.webp"
-            alt="Display of setting individual goals for student"
-          />
+        <div class="address-individual-gaps">
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/primary-kick-off-quiz-homepage-300x171.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/primary-kick-off-quiz-homepage-768x437.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              src="./img/primary-kick-off-quiz-homepage.png"
+            />
+            <img
+              src="img/address-individual-gaps.webp"
+              alt="Display of setting individual goals for student"
+            />
+          </picture>
           <h3>Address individual gaps</h3>
           <p>
             Tutoring content, pitch and pace is fully personalised following
@@ -473,11 +596,25 @@
           </button>
         </div>
 
-        <div>
-          <img
-            src="img/maximize-school-funding.webp"
-            alt="Students working behind computers"
-          />
+        <div class="maximise-school-funding">
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/cost-effective-tutoring-primary-and-secondary-300x122.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/cost-effective-tutoring-primary-and-secondary-768x312.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              src="./img/cost-effective-tutoring-primary-and-secondary.png"
+            />
+            <img
+              src="img/maximize-school-funding.webp"
+              alt="Students working behind computers"
+            />
+          </picture>
           <h3>Maximise school funding</h3>
           <p>
             We&#39;re proud to be the <b>most affordable DfE-approved</b> one to
@@ -495,11 +632,21 @@
           </button>
         </div>
 
-        <div>
-          <img
-            src="img/free-up-staff-time.webp"
-            alt="Profile of two students"
-          />
+        <div class="free-up-staff-time">
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/KS2-interventions-hero-image-1-300x232.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/KS2-interventions-hero-image-1.png"
+            />
+            <img
+              src="img/free-up-staff-time.webp"
+              alt="Profile of two students"
+            />
+          </picture>
           <h3>Free up staff time</h3>
           <p>
             Schools have a reliable, consistent and easy-to-run intervention for
@@ -515,11 +662,21 @@
           <button class="btn btn-blue impact">Impact in schools</button>
         </div>
 
-        <div>
-          <img
-            src="img/save-on-staff-training.webp"
-            alt="Display of the tutor training portal"
-          />
+        <div class="save-on-staff-training">
+          <picture>
+            <source
+              media="(max-width: 300px)"
+              src="./img/third-space-learning-maths-tutors-training-300x186.png"
+            />
+            <source
+              media="(min-width: 301px)"
+              src="./img/third-space-learning-maths-tutors-training.png"
+            />
+            <img
+              src="img/free-up-staff-time.webp"
+              alt="Profile of two students"
+            />
+          </picture>
           <h3>Save on staff training</h3>
           <p>
             All programmes are built by former maths teachers and pedagogy
@@ -576,12 +733,17 @@
       <!-- carousel -->
       <div class="carousel-container">
         <input type="radio" name="carousel-form" id="maria-next" />
-        <input type="radio" name="carousel-form" id="maria-back" />
+        <input type="radio" name="carousel-form" id="maria-back" checked />
         <div class="carousel-item" id="maria">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" /><img
+            <img
+              src="img/quote.svg"
+              alt="Blue quotations"
+              class="quotation"
+            /><img
               src="img/st-pauls-middle-school-small-1.svg"
               alt="logo Saints Pauls Middle School"
+              class="logo-carousel"
             />
           </div>
           <p>
@@ -606,9 +768,14 @@
         <input type="radio" name="carousel-form" id="catherine-back" />
         <div class="carousel-item" id="catherine">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" /><img
+            <img
+              src="img/quote.svg"
+              alt="Blue quotations"
+              class="quotation"
+            /><img
               src="img/griffin-park-primary.svg"
               alt="logo Griffin Park Primary School"
+              class="logo-carousel"
             />
           </div>
           <p>
@@ -634,9 +801,14 @@
         <input type="radio" name="carousel-form" id="mandy-back" />
         <div class="carousel-item" id="mandy">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" /><img
+            <img
+              src="img/quote.svg"
+              alt="Blue quotations"
+              class="quotation"
+            /><img
               src="img/Oxley-primary-school.svg"
               alt="logo Oxley Primary School"
+              class="logo-carousel"
             />
           </div>
           <p>
@@ -663,9 +835,14 @@
         <input type="radio" name="carousel-form" id="gemma-back" />
         <div class="carousel-item" id="gemma">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" /><img
+            <img
+              src="img/quote.svg"
+              alt="Blue quotations"
+              class="quotation"
+            /><img
               src="img/Priory-primary.svg"
               alt="logo Priory Primary School"
+              class="logo-carousel"
             />
           </div>
           <p>
@@ -690,9 +867,14 @@
         <input type="radio" name="carousel-form" id="abi-back" />
         <div class="carousel-item" id="abi">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" /><img
+            <img
+              src="img/quote.svg"
+              alt="Blue quotations"
+              class="quotation"
+            /><img
               src="img/holy-trinity.svg"
               alt="logo Holy Trinity Primary School"
+              class="logo-carousel"
             />
           </div>
           <p>
@@ -718,10 +900,11 @@
         <input type="radio" name="carousel-form" id="daniel-back" />
         <div class="carousel-item" id="daniel">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" />
+            <img src="img/quote.svg" alt="Blue quotations" class="quotation" />
             <img
               src="img/Choppington.svg"
               alt="logo Choppington Primary School"
+              class="logo-carousel"
             />
           </div>
           <p>
@@ -748,8 +931,12 @@
         <input type="radio" name="carousel-form" id="angie-back" />
         <div class="carousel-item" id="angie">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" />
-            <img src="img/giles-brook-big.jpg" alt="logo Giles Brook Primary" />
+            <img src="img/quote.svg" alt="Blue quotations" class="quotation" />
+            <img
+              src="img/giles-brook-big.jpg"
+              alt="logo Giles Brook Primary"
+              class="logo-carousel"
+            />
           </div>
           <p>
             A great all round experience. The children love their sessions,
@@ -773,10 +960,11 @@
         <input type="radio" name="carousel-form" id="liz-back" />
         <div class="carousel-item" id="liz">
           <div class="container-carousel-img">
-            <img src="img/quote.svg" alt="Blue quotations" />
+            <img src="img/quote.svg" alt="Blue quotations" class="quotation" />
             <img
               src="img/pevensey-and-westham.svg"
               alt="logo Pevensy and Westham CofE Primary School"
+              class="logo-carousel"
             />
           </div>
           <p>
@@ -820,7 +1008,11 @@
             </p>
           </div>
           <div class="cards card-rs">
-            <img src="img/rising-starts.webp" alt="Logo Rising Stars" />
+            <img
+              src="img/rising-starts.webp"
+              alt="Logo Rising Stars"
+              class="logo-rising-star"
+            />
             <p>
               In an independent trial using PUMA tests, pupils made 7
               months&#39; progress in 14 weeks.
@@ -837,6 +1029,7 @@
             <img
               src="img/What-works-for-childrens-socialcare.webp"
               alt="Logo What Works for Children's Social Care"
+              class="logo-wwfcsc"
             />
             <p>
               We&#39;ve helped to generate evidence and improve outcomes for
@@ -898,7 +1091,7 @@
             ><img
               src="img/icon-email.svg"
               alt="icon email"
-              class="icons"
+              class="icons icon-email"
             /><span>hello@thirdspacelearning.com</span></a
           >
           <a href="tel:02037710095"
@@ -923,7 +1116,7 @@
             /><span>Press enquiries</span></a
           >
         </div>
-        <div>
+        <div class="container-social-media">
           <a href="https://www.facebook.com/thirdspacelearning/"
             ><img
               src="img/icon-facebook.svg"
@@ -977,7 +1170,7 @@
       <!-- links in footer -->
       <ul>
         <li>
-          <h4>Maths Intervention</h4>
+          <h4>Maths Interventions</h4>
           <ul>
             <li><a href="#"></a></li>
             <li><a href="#">Primary Maths Tutoring</a></li>
@@ -1064,7 +1257,7 @@
       </ul>
       <!-- small print -->
       <p>
-        <small>&copy;2024 Third Space Learning. All rights reserved.</small>
+        <small>&copy; 2024 Third Space Learning. All rights reserved.</small>
       </p>
       <p>
         <small

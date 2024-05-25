@@ -41,6 +41,11 @@ $backgrounddark: rgb(249 248 248);
   scroll-behavior: smooth;
 }
 
+// main {
+//   padding:
+//     37px 15px 10px 15px;
+// }
+
 p {
   font-size: 15px;
   font-weight: 400;
@@ -56,7 +61,7 @@ h4 {
   padding: 13px 30px;
   border-radius: 50px;
   cursor: pointer;
-  min-width: 166px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-yellow {
@@ -83,7 +88,7 @@ h4 {
 .btn-green {
   background-color: #00bc89;
   color: white;
-
+  font-weight: bold;
 }
 
 .btn-green:hover {
@@ -112,6 +117,11 @@ h4 {
   border-radius: 10px;
 }
 
+section {
+  margin-bottom: 30px;
+  ;
+}
+
 /*
 ************END***********
 */
@@ -131,6 +141,7 @@ header {
 header img {
   max-width: 173px;
   height: auto;
+  margin-bottom: 16px;
 }
 
 .container-header {
@@ -159,8 +170,7 @@ header img {
 }
 
 .burger {
-  margin-top: 7px;
-  margin-right: 5px;
+  margin-top: 3px;
   border-radius: 7px;
   padding: 3px 6px;
 }
@@ -168,6 +178,7 @@ header img {
 .burger img {
   height: 32px;
   width: 27px;
+  margin-bottom: 0px;
 }
 
 .burger:hover {
@@ -186,14 +197,17 @@ header .come-down {
   left: 0;
   top: 0;
   height: 100vh;
+  max-width: 320px;
   background: white;
   z-index: 4;
-  padding: 40px;
+  padding: 16px 24px 16px 16px;
   pointer-events: all;
 
   .dropdown {
-    padding: 10px;
     font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+
 
     ul li {
       font-weight: 400;
@@ -238,6 +252,14 @@ header .come-down {
   pointer-events: none;
 }
 
+.request-quote-btn,
+.log-in-btn {
+  height: 36px;
+  padding: 7px 24px;
+  margin-bottom: 3px;
+  min-width: fit-content;
+}
+
 /*
 ************END***********
 */
@@ -247,6 +269,11 @@ header .come-down {
        video-section
 **************************
 */
+.video-section {
+  padding:
+    37px 15px 0px 15px;
+}
+
 
 h1 {
   font-size: 20px;
@@ -270,8 +297,26 @@ h1 {
   @include flex(column, flex-start, center);
 }
 
-.video-section img {
-  display: none;
+.video-section .videoandtext>p {
+  margin-top: 13px;
+  margin-bottom: 32px;
+  padding: 6px 16px;
+}
+
+.video-section {
+
+  h1 {
+    margin-bottom: 0px;
+  }
+
+  p {
+    margin-bottom: 42px;
+
+  }
+
+  img {
+    display: none;
+  }
 }
 
 .iframe-container {
@@ -305,16 +350,18 @@ p>.speaker {
   border-radius: 40px 10px 10px 40px;
   @include flex(row, flex-end, center);
   width: fit-content;
-  gap: 10px;
+  gap: 3px;
   align-self: flex-end;
 }
 
 .container-btn {
-  @include flex(row, space-around, flex-start);
+  @include flex(row, space-between, flex-start);
 }
 
 .request-quote-intro {
   animation: btnslideinleft 1s;
+  padding: 12px 23px;
+  margin: 0px 4px;
 }
 
 @keyframes btnslideinleft {
@@ -329,8 +376,10 @@ p>.speaker {
   }
 }
 
-.how-it-works {
+.how-it-works-btn-intro {
   animation: btnslideinright 1s;
+  padding: 12px 34px;
+  margin: 0px 4px;
 }
 
 
@@ -357,7 +406,14 @@ p>.speaker {
 */
 .consistent {
   background-color: $backgrounddark;
-  padding: 30px 30px;
+  padding: 14px 15px 0px 15px;
+  margin-bottom: 20px;
+  ;
+
+  h4 {
+    font-size: 15px;
+    margin-bottom: 11px;
+  }
 
   P {
     text-align: left;
@@ -367,25 +423,29 @@ p>.speaker {
 .looking-glass {
   width: 18px;
   height: auto;
-  display: inline;
+  display: inline-block;
+  margin-right: 12px;
 }
 
 .consistent label {
   color: #2779f5;
-  display: block;
+  @include flex(row, flex-start, center);
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   line-height: 30px;
 }
 
 input {
-  /* visibility: hidden;
-  transform: translateX(-100px); */
   display: none;
 }
 
 input:checked+label {
   text-decoration: underline;
+}
+
+.container-changing-pictures {
+  position: relative;
+  align-self: stretch;
 }
 
 .consistent label:hover,
@@ -397,41 +457,38 @@ input:checked+label {
 .container-links {
   display: block;
   background-color: white;
-  height: 80px;
-  width: 85vw;
   @include flex(column, center, flex-start);
-  padding: 30px;
+  padding: 11px 12px;
+  margin-top: 8px;
+  align-self: stretch;
 }
 
 .container-links a {
   color: black;
   font-size: 15px;
   @include flex(row, flex-start, center);
-  gap: 10px;
+  gap: 7px;
   line-height: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .right-arrow {
-  width: 8px;
+  width: 9px;
   height: auto;
   display: inline;
-}
-
-.container {
-  position: relative;
 }
 
 #cost-effective,
 #free-primary,
 #free-secondary,
 #premium-primary {
+  @include flex(column, flex-start, center);
   position: absolute;
-  top: 164px;
-  left: 0px;
+  top: 0;
+  left: 0;
+  z-index: 1;
   visibility: hidden;
-  background-color: white;
-  opacity: 0;
+
 }
 
 #cost-effective {
@@ -443,17 +500,23 @@ input:checked label {
 }
 
 .container-form {
-  position: relative;
-  height: 500px;
+  @include flex(column, flex-start, flex-start);
+  height: 563px;
+  padding: 5px 5px;
 }
 
-#underline1:checked~#cost-effective,
-#underline2:checked~#free-primary,
-#underline3:checked~#free-secondary,
-#underline4:checked~#premium-primary {
+.container-changing-pictures picture {
+  max-width: 460px;
+}
+
+#underline1:checked~.container-changing-pictures>#cost-effective,
+#underline2:checked~.container-changing-pictures>#free-primary,
+#underline3:checked~.container-changing-pictures>#free-secondary,
+#underline4:checked~.container-changing-pictures>#premium-primary {
   opacity: 1;
   visibility: visible;
   transition: all 0.2s ease-in;
+  z-index: 2;
 }
 
 /*
@@ -464,25 +527,43 @@ input:checked label {
 Maths tutoring programmes
 **************************
 */
+.maths-tutoring {
+  padding: 10px 15px 0px 15px;
+}
 
-h2 {
+.maths-tutoring h2 {
   text-align: center;
   font-size: 25px;
   font-weight: 700;
+  margin-bottom: -8px;
+  line-height: 34px;
 }
 
 .maths-tutoring {
-
   h3 {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 13px;
+  }
+
+  picture {
+    margin-bottom: 12px;
   }
 
   .btn {
     @extend %center;
+    padding: 12px 13px;
+    margin-bottom: 36px;
+  }
+
+  .view-GCSE {
+    font-size: 20px;
+    padding: 12px 40px;
   }
 }
+
+
 
 /*
 ************END***********
@@ -497,7 +578,7 @@ h2 {
   background: linear-gradient(166deg, #398bda 1%, #00bc89 40%);
   width: 100%;
   padding: 20px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   color: white;
   gap: 30px;
 
@@ -527,11 +608,19 @@ Why schools like yours choose TSL
 */
 .why {
   text-align: left;
-  margin: 30px;
+  margin-bottom: 49px;
+
+  h2 {
+    text-align: center;
+    margin: 0px 15px;
+    margin-bottom: -30px;
+  }
 
   h3 {
     font-weight: 400;
     font-size: 20px;
+    margin-bottom: 8px;
+    ;
   }
 
   p {
@@ -541,15 +630,41 @@ Why schools like yours choose TSL
   q {
     font-style: italic;
     font-size: 15px;
-    ;
   }
 
   q~p {
     //this is the name of the person that gave the q
     font-weight: 700;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 12px;
+    margin-bottom: 16px;
   }
+
+  picture {
+    margin-top: 4px;
+    margin-bottom: 17px;
+  }
+
+  .btn {
+    padding: 12px 15px;
+    min-width: 166px;
+    margin-bottom: 6px;
+    ;
+  }
+}
+
+.reach-more-pupils,
+.maximise-school-funding,
+.save-on-staff-training {
+  background-color: $backgrounddark;
+}
+
+.reach-more-pupils,
+.address-individual-gaps,
+.maximise-school-funding,
+.free-up-staff-time,
+.save-on-staff-training {
+  padding: 15px;
 }
 
 /*
@@ -560,6 +675,9 @@ Why schools like yours choose TSL
       turning cards
 **************************
 */
+.container-turning-cards {
+  margin: 0px 14px 64px 14px;
+}
 
 .turning-cards {
   max-width: 500px;
@@ -599,8 +717,8 @@ Why schools like yours choose TSL
 .front,
 .back {
   background-color: white;
-  border-radius: 10px;
-  padding: 40px;
+  border-radius: 13px;
+  padding: 40px 45px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12),
     0px 0px 2px rgba(0, 0, 0, 0.14);
 }
@@ -627,8 +745,9 @@ Why schools like yours choose TSL
 
 .turning-cards .number {
   font-size: 45px;
-  line-height: 140px;
-  margin-bottom: 0px;
+  line-height: 0px;
+  margin-bottom: 72px;
+  margin-top: 33px;
 }
 
 .schools-supported .number {
@@ -651,10 +770,10 @@ Why schools like yours choose TSL
 .container-arrows {
   @include flex(row, space-between, center);
   position: absolute;
-  bottom: -70px;
-  left: 15%;
+  bottom: -83px;
+  left: 11%;
   margin: 0px auto;
-  width: 70%;
+  width: 77%;
   z-index: 5;
 
   label {
@@ -686,12 +805,11 @@ Why schools like yours choose TSL
 }
 
 .carousel-item {
-  width: 90%;
+  width: 93%;
   height: 420px;
   background-color: white;
   border-radius: 30px;
-  padding: 40px;
-
+  padding: 23px 12px;
   position: absolute;
   top: 0;
   left: 28px;
@@ -772,31 +890,45 @@ Why schools like yours choose TSL
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 510px;
 }
 
-.carousel-item img {
-  height: 50px;
+.carousel-item {
+
+  .quotation {
+    height: 42px;
+    margin-top: 3px;
+  }
+
+  .logo-carousel {
+    width: 50px;
+  }
 }
 
 // styling
 .container-carousel-img {
   @include flex(row, space-between, flex-start);
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .carousel-item p {
   text-align: left;
   font-size: 17px;
+  line-height: 26px;
+  margin-bottom: 29px;
 }
 
 .carousel-item p:nth-child(3) {
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 2px;
+  ;
 }
 
 .carousel-item p:nth-child(4) {
   font-size: 13px;
+  margin-bottom: 7px;
+  ;
 }
 
 .carousel-item a {
@@ -809,6 +941,7 @@ Why schools like yours choose TSL
 .carousel-item a span {
   background-color: #e3f2ff;
   padding: 0 4px;
+  border-radius: 4px;
 }
 
 .carousel-item a:hover {
@@ -817,7 +950,8 @@ Why schools like yours choose TSL
 
 .see-all-case-studies {
   @extend %center;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
+  padding: 12px 12px;
 }
 
 /*
@@ -832,10 +966,23 @@ Working in partnership with the education community
 .container-working {
   box-shadow: 0px 8.25px 11.25px rgba(0, 0, 0, 0.2),
     0px 6.75px 34.5px rgba(0, 0, 0, 0.12), 0px 18px 28.5px rgba(0, 0, 0, 0.14);
-  width: 90%;
-  margin: 0px auto 20px auto;
-  padding: 15px;
+  width: 94%;
+  margin: 0px auto 30px auto;
+  padding: 14px 30px;
   border-radius: 24px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+
+.logo-rising-star {
+  max-width: 300px;
+}
+
+.logo-wwfcsc {
+  max-width: 180px;
 }
 
 .container-working img {
@@ -843,7 +990,7 @@ Working in partnership with the education community
 }
 
 .container-working p {
-  padding: 10px 0 40px 0;
+  padding: 10px 0 25px 0;
 }
 
 .card-NTP {
@@ -901,6 +1048,20 @@ Working in partnership with the education community
   background-color: white;
   max-width: 515px;
   margin: 0px 15px 20px 15px;
+
+  padding: 28px 60px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 19px;
+  }
+
+  .btn {
+    padding: 13px 38px;
+  }
 }
 
 main {
@@ -908,7 +1069,7 @@ main {
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: 100vw;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .container-ready .btn {
@@ -925,7 +1086,7 @@ main {
 **************************
 */
 footer {
-  padding: 50px;
+  padding: 18px 72px;
   background-color: $backgrounddark;
 
   a:hover {
@@ -938,9 +1099,19 @@ footer {
     margin-bottom: 0px;
   }
 
+  ul li {
+    margin-bottom: -2px;
+
+    a {
+      font-size: 15px;
+    }
+  }
+
+
   p {
     margin-bottom: 0px;
     text-align: left;
+
 
     small {
       font-size: 15px;
@@ -951,36 +1122,50 @@ footer {
 }
 
 footer ul li ul {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 footer .logo-footer {
   width: 173px;
+  margin-bottom: 15px;
 }
 
 .icons {
-  width: 15px;
+  width: 18px;
   display: inline;
 }
 
 .icon-address {
-  height: 16px;
+  height: 17px;
   margin-bottom: -3px;
   width: auto;
 }
 
-.contact a {
-  display: block;
+.icon-email {
+  margin-bottom: -3px;
+}
+
+.contact {
+  margin-bottom: 9px;
+
+  a {
+    @include flex (row, flex-start, center);
+  }
 
   span {
-    padding: 5px;
+    padding: 0px 5px;
+    font-size: 15px;
   }
 }
 
 .social-media {
-  height: 30px;
-  margin: 5px;
+  height: 32px;
+  margin: 5px 5px 5px 0px;
   display: inline;
+}
+
+.container-social-media {
+  margin-bottom: 3px;
 }
 
 // flags
@@ -1046,6 +1231,46 @@ footer .logo-footer {
   position: absolute;
   top: 24px;
   left: 55px;
+}
+
+/*
+************END***********
+*/
+
+/*
+**************************
+      media queries
+**************************
+*/
+@media (min-width: 336px) {
+  .container-form {
+    height: 520px;
+  }
+}
+
+@media (min-width: 359px) {
+  .container-form {
+    height: 479px;
+  }
+}
+
+@media (min-width: 411px) {
+  .container-form {
+    height: 450px;
+  }
+}
+
+@media (min-width: 462px) {
+  .container-form {
+    height: 445px;
+  }
+}
+
+@media (min-width: 600px) {
+  header .come-down {
+    width: 280px;
+    padding: 32px 40px 32px 32px;
+  }
 }
 
 /*
