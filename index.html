@@ -101,7 +101,7 @@
             class="logo"
         /></a>
         <nav>
-          <ul>
+          <ul class="header-icon">
             <li tabindex="0" class="focus">
               <div class="burger">
                 <img src="./img/burger.svg" alt="Burger Menu Button" />
@@ -712,7 +712,7 @@
             </div>
           </div>
         </div>
-        <div class="turning-cards">
+        <div class="turning-cards turning-cards-two">
           <div class="turning-cards-inner pupils-taught">
             <div class="front">
               <p class="number">162,075</p>
@@ -720,11 +720,11 @@
               <img src="img/cursor.svg" alt="Cursor hand" />
             </div>
             <div class="back">
-              <q
-                ><span>This will really help me so much!</span> I&#39;m getting
-                more and more confident for my SATs every time I do these
-                sessions! Thank you!</q
-              >
+              <p class="quote-turning-cards">
+                <span>"This will really help me so much!<br /></span> I&#39;m
+                getting more and more confident for my SATs every time I do
+                these sessions! Thank you!"
+              </p>
               <p>Year 6 pupil Liverpool</p>
             </div>
           </div>
@@ -1070,200 +1070,206 @@
     </main>
     <!-- start of footer -->
     <footer>
-      <a href="#"
-        ><img
-          src="img/tsl-logo.webp"
-          alt="Third space learning logo"
-          class="logo-footer"
-      /></a>
-      <!-- contact details -->
-      <div>
-        <div class="contact">
-          <a
-            href="https://www.google.co.uk/maps/place/68+Hanbury+St,+London+E1+5JL/@51.5200292,-0.0703168,17z/data=!3m1!4b1!4m6!3m5!1s0x48761de3ffd80c6b:0x2f0458fc9a7218eb!8m2!3d51.5200292!4d-0.0703168!16s%2Fg%2F11qn7f9wrk?entry=ttu"
-            ><img
-              src="img/icon-address.svg"
-              alt="icon address"
-              class="icons icon-address"
-            /><span>68 Hanbury Street, London E1 5JL</span></a
-          >
-          <a href="mailto:hello@thirdspacelearning.com"
-            ><img
-              src="img/icon-email.svg"
-              alt="icon email"
-              class="icons icon-email"
-            /><span>hello@thirdspacelearning.com</span></a
-          >
-          <a href="tel:02037710095"
-            ><img
-              src="img/icon-phone.svg"
-              alt="icon phone"
-              class="icons"
-            /><span> 0203 771 0095</span></a
-          >
-          <a href="#"
-            ><img
-              src="img/icon-talk.svg"
-              alt="icon messaging"
-              class="icons"
-            /><span>Contact us</span></a
-          >
-          <a href="#"
-            ><img
-              src="img/icon-talk.svg"
-              alt="icon messaging"
-              class="icons"
-            /><span>Press enquiries</span></a
-          >
+      <div class="container-footer">
+        <a href="#"
+          ><img
+            src="img/tsl-logo.webp"
+            alt="Third space learning logo"
+            class="logo-footer"
+        /></a>
+        <!-- contact details -->
+        <div>
+          <div class="contact">
+            <a
+              href="https://www.google.co.uk/maps/place/68+Hanbury+St,+London+E1+5JL/@51.5200292,-0.0703168,17z/data=!3m1!4b1!4m6!3m5!1s0x48761de3ffd80c6b:0x2f0458fc9a7218eb!8m2!3d51.5200292!4d-0.0703168!16s%2Fg%2F11qn7f9wrk?entry=ttu"
+              ><img
+                src="img/icon-address.svg"
+                alt="icon address"
+                class="icons icon-address"
+              /><span>68 Hanbury Street, London E1 5JL</span></a
+            >
+            <a href="mailto:hello@thirdspacelearning.com"
+              ><img
+                src="img/icon-email.svg"
+                alt="icon email"
+                class="icons icon-email"
+              /><span>hello@thirdspacelearning.com</span></a
+            >
+            <a href="tel:02037710095"
+              ><img
+                src="img/icon-phone.svg"
+                alt="icon phone"
+                class="icons"
+              /><span> 0203 771 0095</span></a
+            >
+            <a href="#"
+              ><img
+                src="img/icon-talk.svg"
+                alt="icon messaging"
+                class="icons"
+              /><span>Contact us</span></a
+            >
+            <a href="#"
+              ><img
+                src="img/icon-talk.svg"
+                alt="icon messaging"
+                class="icons"
+              /><span>Press enquiries</span></a
+            >
+          </div>
+          <div class="container-social-media">
+            <a href="https://www.facebook.com/thirdspacelearning/"
+              ><img
+                src="img/icon-facebook.svg"
+                alt="facebook"
+                class="social-media"
+            /></a>
+            <a
+              href="https://twitter.com/thirdspacetweet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              ><img
+                src="img/icon-twitter.svg"
+                alt="twitter now known as x"
+                class="social-media"
+            /></a>
+            <a href="https://www.youtube.com/channel/UCiFeRWhZs2awzf_UO2_hKzg"
+              ><img
+                src="img/icon-youtube.svg"
+                alt="youtube"
+                class="social-media"
+            /></a>
+            <a href="https://www.linkedin.com/company/third-space-learning/"
+              ><img
+                src="img/icon-linkedin.svg"
+                alt="linkedin"
+                class="social-media"
+            /></a>
+          </div>
+          <div class="flags">
+            <input type="checkbox" id="drop-down" name="drop-down" /><label
+              for="drop-down"
+              class="british-flag"
+            >
+              <div class="container-flag british-container-flag">
+                <img
+                  src="img/ukflag.webp"
+                  alt="British flag"
+                  class="flag american"
+                />
+              </div>
+              <div class="arrow-down"></div
+            ></label>
+            <input type="checkbox" id="checkbox-america" /><label
+              for="checkbox-america"
+              class="checkbox-america"
+            >
+              <div class="container-flag container-flag-american">
+                <img
+                  src="img/usflag.webp"
+                  alt="American flag"
+                  class="flag british"
+                /></div
+            ></label>
+          </div>
         </div>
-        <div class="container-social-media">
-          <a href="https://www.facebook.com/thirdspacelearning/"
-            ><img
-              src="img/icon-facebook.svg"
-              alt="facebook"
-              class="social-media"
-          /></a>
-          <a
-            href="https://twitter.com/thirdspacetweet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-            ><img
-              src="img/icon-twitter.svg"
-              alt="twitter now known as x"
-              class="social-media"
-          /></a>
-          <a href="https://www.youtube.com/channel/UCiFeRWhZs2awzf_UO2_hKzg"
-            ><img src="img/icon-youtube.svg" alt="youtube" class="social-media"
-          /></a>
-          <a href="https://www.linkedin.com/company/third-space-learning/"
-            ><img
-              src="img/icon-linkedin.svg"
-              alt="linkedin"
-              class="social-media"
-          /></a>
-        </div>
-        <div class="flags">
-          <input type="checkbox" id="drop-down" name="drop-down" /><label
-            for="drop-down"
-            class="british-flag"
-          >
-            <div class="container-flag british-container-flag">
-              <img
-                src="img/ukflag.webp"
-                alt="British flag"
-                class="flag american"
-              />
-            </div>
-            <div class="arrow-down"></div
-          ></label>
-          <input type="checkbox" id="checkbox-america" /><label
-            for="checkbox-america"
-            class="checkbox-america"
-          >
-            <div class="container-flag container-flag-american">
-              <img
-                src="img/usflag.webp"
-                alt="American flag"
-                class="flag british"
-              /></div
-          ></label>
-        </div>
-      </div>
-      <!-- links in footer -->
-      <ul>
-        <li>
-          <h4>Maths Interventions</h4>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#">Primary Maths Tutoring</a></li>
-            <li><a href="#">Secondary Maths Tutoring</a></li>
-            <li><a href="#">Year 3-5 Catch Up Programme</a></li>
-            <li><a href="#">Year 6 Catch Up Programme</a></li>
-            <li><a href="#">Year 6 SATs Revision Programme</a></li>
-            <li><a href="#">Year 7 Catch Up Programme</a></li>
-            <li><a href="#">GCSE Revision Programme</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Case studies</a></li>
-          </ul>
-        </li>
-        <li>
-          <h4>Policies</h4>
-          <ul>
-            <li><a href="#">Data Protection & Privacy Policy</a></li>
-            <li><a href="#">Cookies Policy</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">GDPR Compliance</a></li>
-            <li><a href="#">Safeguarding children</a></li>
-            <li><a href="#">Anti slavery policy</a></li>
-            <li><a href="#">Complaints Procedure</a></li>
-          </ul>
-        </li>
-        <li>
-          <h4>Popular Blogs</h4>
-          <ul>
-            <li><a href="#">SATs Results 2023</a></li>
-            <li><a href="#">Maths Games</a></li>
-            <li><a href="#">Online Tutoring</a></li>
-            <li><a href="#">Long Division Method</a></li>
-            <li><a href="#">Teaching Strategies</a></li>
-            <li><a href="#">2D and 3D Shapes</a></li>
-            <li><a href="#">BODMAS or BIDMAS?</a></li>
-            <li><a href="#">Division</a></li>
-            <li><a href="#">Multiplication</a></li>
-            <li><a href="#">Times Tables</a></li>
-          </ul>
-        </li>
-        <li>
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">GCSE Maths Revision</a></li>
-            <li><a href="#">Maths Intervention Programmes</a></li>
-            <li>
-              <a href="#">Online Maths Tuition</a>
-            </li>
-            <li><a href="#">Maths Tuition</a></li>
-            <li><a href="#">One To One Tuition</a></li>
-            <li><a href="#">Primary School Tuition</a></li>
-            <li><a href="#">School Tutors</a></li>
-            <li><a href="#">Online Maths Tutors</a></li>
-            <li><a href="#">Primary Maths Tutors</a></li>
-            <li><a href="#">GCSE Maths Tutors</a></li>
-            <li><a href="#">Online GCSE Maths Tutors</a></li>
-          </ul>
-        </li>
+        <!-- links in footer -->
+        <ul>
+          <li>
+            <h4>Maths Interventions</h4>
+            <ul>
+              <li><a href="#"></a></li>
+              <li><a href="#">Primary Maths Tutoring</a></li>
+              <li><a href="#">Secondary Maths Tutoring</a></li>
+              <li><a href="#">Year 3-5 Catch Up Programme</a></li>
+              <li><a href="#">Year 6 Catch Up Programme</a></li>
+              <li><a href="#">Year 6 SATs Revision Programme</a></li>
+              <li><a href="#">Year 7 Catch Up Programme</a></li>
+              <li><a href="#">GCSE Revision Programme</a></li>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Case studies</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Policies</h4>
+            <ul>
+              <li><a href="#">Data Protection & Privacy Policy</a></li>
+              <li><a href="#">Cookies Policy</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">GDPR Compliance</a></li>
+              <li><a href="#">Safeguarding children</a></li>
+              <li><a href="#">Anti slavery policy</a></li>
+              <li><a href="#">Complaints Procedure</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Popular Blogs</h4>
+            <ul>
+              <li><a href="#">SATs Results 2023</a></li>
+              <li><a href="#">Maths Games</a></li>
+              <li><a href="#">Online Tutoring</a></li>
+              <li><a href="#">Long Division Method</a></li>
+              <li><a href="#">Teaching Strategies</a></li>
+              <li><a href="#">2D and 3D Shapes</a></li>
+              <li><a href="#">BODMAS or BIDMAS?</a></li>
+              <li><a href="#">Division</a></li>
+              <li><a href="#">Multiplication</a></li>
+              <li><a href="#">Times Tables</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">GCSE Maths Revision</a></li>
+              <li><a href="#">Maths Intervention Programmes</a></li>
+              <li>
+                <a href="#">Online Maths Tuition</a>
+              </li>
+              <li><a href="#">Maths Tuition</a></li>
+              <li><a href="#">One To One Tuition</a></li>
+              <li><a href="#">Primary School Tuition</a></li>
+              <li><a href="#">School Tutors</a></li>
+              <li><a href="#">Online Maths Tutors</a></li>
+              <li><a href="#">Primary Maths Tutors</a></li>
+              <li><a href="#">GCSE Maths Tutors</a></li>
+              <li><a href="#">Online GCSE Maths Tutors</a></li>
+            </ul>
+          </li>
 
-        <li>
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Insight &#45; Girls and Mathematics</a></li>
-            <li><a href="#">Insight &#45; What Maths Do We Need</a></li>
-            <li><a href="#">Insight &#45; Maths and Careers</a></li>
-          </ul>
-        </li>
-        <li>
-          <h4>Popular GCSE maths guides</h4>
-          <ul>
-            <li><a href="#">GCSE maths past papers</a></li>
-            <li><a href="#">GCSE maths questions</a></li>
-            <li><a href="#">GCSE maths topics</a></li>
-            <li><a href="#">Simultaneous equations</a></li>
-            <li><a href="#">Nth term</a></li>
-            <li><a href="#">Circle theorems</a></li>
-            <li><a href="#">Factorising</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- small print -->
-      <p>
-        <small>&copy; 2024 Third Space Learning. All rights reserved.</small>
-      </p>
-      <p>
-        <small
-          >Third Space Learning is the trading name of Virtual Class Ltd</small
-        >
-      </p>
+          <li>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Insight &#45; Girls and Mathematics</a></li>
+              <li><a href="#">Insight &#45; What Maths Do We Need</a></li>
+              <li><a href="#">Insight &#45; Maths and Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <h4>Popular GCSE maths guides</h4>
+            <ul>
+              <li><a href="#">GCSE maths past papers</a></li>
+              <li><a href="#">GCSE maths questions</a></li>
+              <li><a href="#">GCSE maths topics</a></li>
+              <li><a href="#">Simultaneous equations</a></li>
+              <li><a href="#">Nth term</a></li>
+              <li><a href="#">Circle theorems</a></li>
+              <li><a href="#">Factorising</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- small print -->
+        <p>
+          <small>&copy; 2024 Third Space Learning. All rights reserved.</small>
+        </p>
+        <p>
+          <small
+            >Third Space Learning is the trading name of Virtual Class
+            Ltd</small
+          >
+        </p>
+      </div>
     </footer>
   </body>
 </html>

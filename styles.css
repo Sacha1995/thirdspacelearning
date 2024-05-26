@@ -113,23 +113,29 @@ section {
 **************************
 */
 header {
-  height: 58px;
-  width: 100%;
   margin: 0px;
   box-shadow: 0px 3px 3px 0px #e1e1e1;
 }
 
 header img {
   max-width: 173px;
-  height: auto;
-  margin-bottom: 16px;
+  width: 100%;
+}
+
+.container-header > a {
+  flex-shrink: 2;
 }
 
 .container-header {
-  display: flex;
+  height: 74px;
   max-width: 350px;
-  margin: 16px 72px;
-  justify-content: space-between;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
 /*
@@ -237,6 +243,11 @@ header .come-down .dropdown ul li {
   min-width: fit-content;
 }
 
+.header-icon {
+  margin-bottom: 0px;
+  width: 39px;
+}
+
 /*
 ************END***********
 */
@@ -326,6 +337,7 @@ p > .speaker {
   width: fit-content;
   gap: 3px;
   align-self: flex-end;
+  text-align: left;
 }
 
 .container-btn {
@@ -337,8 +349,13 @@ p > .speaker {
 
 .request-quote-intro {
   animation: btnslideinleft 1s;
-  padding: 12px 23px;
+}
+
+.request-quote-intro,
+.how-it-works-btn-intro {
+  padding: 13px;
   margin: 0px 4px;
+  line-height: 22px;
 }
 
 @keyframes btnslideinleft {
@@ -353,8 +370,6 @@ p > .speaker {
 }
 .how-it-works-btn-intro {
   animation: btnslideinright 1s;
-  padding: 12px 34px;
-  margin: 0px 4px;
 }
 
 @keyframes btnslideinright {
@@ -536,7 +551,8 @@ Maths tutoring programmes
 }
 .maths-tutoring .view-GCSE {
   font-size: 20px;
-  padding: 12px 40px;
+  padding: 15px 40px;
+  line-height: 21px;
 }
 
 /*
@@ -612,7 +628,6 @@ Why schools like yours choose TSL
 }
 .why .btn {
   padding: 12px 15px;
-  min-width: 166px;
   margin-bottom: 6px;
 }
 
@@ -675,8 +690,10 @@ Why schools like yours choose TSL
   backface-visibility: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 0px;
+  z-index: 1;
 }
 
 /* Style the front side */
@@ -691,6 +708,23 @@ Why schools like yours choose TSL
 /* Style the back side */
 .back {
   transform: rotateY(180deg);
+}
+.back p {
+  font-weight: bold;
+  font-size: 15px;
+  z-index: 2;
+}
+.back q,
+.back .quote-turning-cards {
+  margin-bottom: 10px;
+  font-weight: 400;
+  margin-bottom: 27px;
+  font-size: 15px;
+}
+.back q span,
+.back .quote-turning-cards span {
+  display: inline-block;
+  padding-bottom: 17px;
 }
 
 .front img {
@@ -765,13 +799,14 @@ Why schools like yours choose TSL
 
 .carousel-item {
   width: 93%;
-  height: 420px;
+  height: 504px;
   background-color: white;
   border-radius: 30px;
   padding: 23px 12px;
   position: absolute;
   top: 0;
-  left: 28px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -831,7 +866,7 @@ Why schools like yours choose TSL
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 510px;
+  height: 594px;
 }
 
 .carousel-item .quotation {
@@ -912,10 +947,12 @@ Working in partnership with the education community
 
 .logo-rising-star {
   max-width: 300px;
+  width: 100%;
 }
 
 .logo-wwfcsc {
   max-width: 180px;
+  width: 100%;
 }
 
 .container-working p {
@@ -983,7 +1020,7 @@ Working in partnership with the education community
   margin-bottom: 19px;
 }
 .container-ready .btn {
-  padding: 13px 38px;
+  padding: 13px;
 }
 
 main {
@@ -1003,7 +1040,7 @@ main {
 **************************
 */
 footer {
-  padding: 18px 72px;
+  padding: 18px 0px;
   background-color: rgb(249, 248, 248);
 }
 footer a:hover {
@@ -1026,6 +1063,12 @@ footer p {
 }
 footer p small {
   font-size: 15px;
+}
+
+.container-footer {
+  max-width: 350px;
+  margin: 0px auto;
+  width: 100%;
 }
 
 footer ul li ul {
@@ -1148,6 +1191,28 @@ footer .logo-footer {
       media queries
 **************************
 */
+@media (min-width: 297px) {
+  .carousel-item {
+    height: 483px;
+  }
+  .carousel-container {
+    height: 571px;
+  }
+}
+@media (min-width: 330) {
+  .container-ready .btn {
+    padding: 13px 38px;
+  }
+  .why .btn {
+    min-width: 166px;
+  }
+  .how-it-works-btn-intro {
+    padding: 12px 34px;
+  }
+  .request-quote-intro {
+    min-width: 166px;
+  }
+}
 @media (min-width: 336px) {
   .container-form {
     height: 520px;
@@ -1158,6 +1223,22 @@ footer .logo-footer {
     height: 479px;
   }
 }
+@media (min-width: 372px) {
+  .carousel-item {
+    height: 434px;
+  }
+  .carousel-container {
+    height: 524px;
+  }
+}
+@media (min-width: 382px) {
+  .carousel-item {
+    height: 383px;
+  }
+  .carousel-container {
+    height: 473px;
+  }
+}
 @media (min-width: 411px) {
   .container-form {
     height: 450px;
@@ -1166,6 +1247,14 @@ footer .logo-footer {
 @media (min-width: 462px) {
   .container-form {
     height: 445px;
+  }
+}
+@media (min-width: 556px) {
+  .carousel-item {
+    height: 330px;
+  }
+  .carousel-container {
+    height: 417px;
   }
 }
 @media (min-width: 600px) {

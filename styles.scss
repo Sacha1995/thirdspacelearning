@@ -132,23 +132,26 @@ section {
 **************************
 */
 header {
-  height: 58px;
-  width: 100%;
   margin: 0px;
   box-shadow: 0px 3px 3px 0px #e1e1e1;
 }
 
 header img {
   max-width: 173px;
-  height: auto;
-  margin-bottom: 16px;
+  width: 100%;
+}
+
+.container-header>a {
+  flex-shrink: 2;
 }
 
 .container-header {
-  display: flex;
+  height: 74px;
   max-width: 350px;
-  margin: 16px 72px;
-  justify-content: space-between;
+  width: 100%;
+  margin: 0px auto;
+  @include flex(row, space-around, center);
+  gap: 10px;
 }
 
 /*
@@ -260,6 +263,11 @@ header .come-down {
   min-width: fit-content;
 }
 
+.header-icon {
+  margin-bottom: 0px;
+  width: 39px;
+}
+
 /*
 ************END***********
 */
@@ -352,6 +360,7 @@ p>.speaker {
   width: fit-content;
   gap: 3px;
   align-self: flex-end;
+  text-align: left;
 }
 
 .container-btn {
@@ -360,8 +369,13 @@ p>.speaker {
 
 .request-quote-intro {
   animation: btnslideinleft 1s;
-  padding: 12px 23px;
+}
+
+.request-quote-intro,
+.how-it-works-btn-intro {
+  padding: 13px;
   margin: 0px 4px;
+  line-height: 22px;
 }
 
 @keyframes btnslideinleft {
@@ -378,8 +392,6 @@ p>.speaker {
 
 .how-it-works-btn-intro {
   animation: btnslideinright 1s;
-  padding: 12px 34px;
-  margin: 0px 4px;
 }
 
 
@@ -559,7 +571,8 @@ Maths tutoring programmes
 
   .view-GCSE {
     font-size: 20px;
-    padding: 12px 40px;
+    padding: 15px 40px;
+    line-height: 21px;
   }
 }
 
@@ -647,7 +660,6 @@ Why schools like yours choose TSL
 
   .btn {
     padding: 12px 15px;
-    min-width: 166px;
     margin-bottom: 6px;
     ;
   }
@@ -710,7 +722,9 @@ Why schools like yours choose TSL
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  @include flex(column, center, center);
+  @include flex(column, flex-start, center);
+  gap: 0px;
+  z-index: 1;
 }
 
 /* Style the front side */
@@ -726,6 +740,26 @@ Why schools like yours choose TSL
 /* Style the back side */
 .back {
   transform: rotateY(180deg);
+
+  p {
+    font-weight: bold;
+    font-size: 15px;
+    z-index: 2;
+  }
+
+  q,
+  .quote-turning-cards {
+    margin-bottom: 10px;
+    font-weight: 400;
+    margin-bottom: 27px;
+    font-size: 15px;
+
+    span {
+      display: inline-block;
+      padding-bottom: 17px;
+      ;
+    }
+  }
 }
 
 .front {
@@ -806,13 +840,14 @@ Why schools like yours choose TSL
 
 .carousel-item {
   width: 93%;
-  height: 420px;
+  height: 504px;
   background-color: white;
   border-radius: 30px;
   padding: 23px 12px;
   position: absolute;
   top: 0;
-  left: 28px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   user-select: none;
 }
@@ -890,7 +925,7 @@ Why schools like yours choose TSL
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 510px;
+  height: 594px;
 }
 
 .carousel-item {
@@ -979,10 +1014,12 @@ Working in partnership with the education community
 
 .logo-rising-star {
   max-width: 300px;
+  width: 100%;
 }
 
 .logo-wwfcsc {
   max-width: 180px;
+  width: 100%;
 }
 
 .container-working img {
@@ -1060,7 +1097,7 @@ Working in partnership with the education community
   }
 
   .btn {
-    padding: 13px 38px;
+    padding: 13px;
   }
 }
 
@@ -1086,7 +1123,7 @@ main {
 **************************
 */
 footer {
-  padding: 18px 72px;
+  padding: 18px 0px;
   background-color: $backgrounddark;
 
   a:hover {
@@ -1119,6 +1156,12 @@ footer {
   }
 
 
+}
+
+.container-footer {
+  max-width: 350px;
+  margin: 0px auto;
+  width: 100%;
 }
 
 footer ul li ul {
@@ -1242,6 +1285,34 @@ footer .logo-footer {
       media queries
 **************************
 */
+@media (min-width: 297px) {
+  .carousel-item {
+    height: 483px;
+  }
+
+  .carousel-container {
+    height: 571px;
+  }
+}
+
+@media (min-width: 330) {
+  .container-ready .btn {
+    padding: 13px 38px;
+  }
+
+  .why .btn {
+    min-width: 166px;
+  }
+
+  .how-it-works-btn-intro {
+    padding: 12px 34px;
+  }
+
+  .request-quote-intro {
+    min-width: 166px;
+  }
+}
+
 @media (min-width: 336px) {
   .container-form {
     height: 520px;
@@ -1251,6 +1322,26 @@ footer .logo-footer {
 @media (min-width: 359px) {
   .container-form {
     height: 479px;
+  }
+}
+
+@media (min-width: 372px) {
+  .carousel-item {
+    height: 434px;
+  }
+
+  .carousel-container {
+    height: 524px;
+  }
+}
+
+@media (min-width: 382px) {
+  .carousel-item {
+    height: 383px;
+  }
+
+  .carousel-container {
+    height: 473px;
   }
 }
 
@@ -1266,12 +1357,24 @@ footer .logo-footer {
   }
 }
 
+@media (min-width: 556px) {
+  .carousel-item {
+    height: 330px;
+  }
+
+  .carousel-container {
+    height: 417px;
+  }
+}
+
 @media (min-width: 600px) {
   header .come-down {
     width: 280px;
     padding: 32px 40px 32px 32px;
   }
 }
+
+
 
 /*
 ************END***********
