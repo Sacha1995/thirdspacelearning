@@ -502,10 +502,6 @@ input:checked label {
   padding: 5px 5px;
 }
 
-.container-changing-pictures picture {
-  max-width: 460px;
-}
-
 #underline1:checked ~ .container-changing-pictures > #cost-effective,
 #underline2:checked ~ .container-changing-pictures > #free-primary,
 #underline3:checked ~ .container-changing-pictures > #free-secondary,
@@ -563,15 +559,18 @@ Maths tutoring programmes
            banner
 **************************
 */
+.container-banner {
+  background: linear-gradient(166deg, #398bda 1%, #00bc89 40%);
+  width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 27px;
+}
+
 .banner {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(166deg, #398bda 1%, #00bc89 40%);
-  width: 100%;
-  padding: 20px 15px;
-  margin-bottom: 27px;
   color: white;
   gap: 30px;
 }
@@ -1232,6 +1231,9 @@ footer .logo-footer {
   .carousel-item {
     height: 383px;
   }
+  .btn {
+    min-width: 166px;
+  }
   .carousel-container {
     height: 473px;
   }
@@ -1244,6 +1246,11 @@ footer .logo-footer {
 @media (min-width: 462px) {
   .container-form {
     height: 445px;
+  }
+}
+@media (min-width: 530px) {
+  .container-form {
+    height: 470px;
   }
 }
 @media (min-width: 556px) {
@@ -1290,6 +1297,15 @@ footer .logo-footer {
   .consistent > div,
   .maths-tutoring {
     max-width: 600px;
+  }
+  .container-form {
+    height: 510px;
+  }
+  .container-banner {
+    padding: 20px 42px;
+  }
+  .container-carousel-img {
+    flex-direction: column;
   }
 }
 @media (min-width: 640px) {
@@ -1353,6 +1369,7 @@ footer .logo-footer {
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px auto 35px auto;
+    max-width: 768px;
   }
   .container-grid-maths {
     display: grid;
