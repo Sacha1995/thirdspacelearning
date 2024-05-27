@@ -210,6 +210,7 @@ header .come-down {
 
 nav ul li:focus-within .burger {
   border: #d9d9da solid 2px;
+  padding: 3px 4px 3px 4px;
 }
 
 nav ul li:focus-within ul {
@@ -256,7 +257,96 @@ nav ul li:focus-within:has(.burger) {
 /*
 ************END***********
 */
+/*
+**************************
+          pop-up
+**************************
+*/
+.pop-up {
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #09217b;
+  color: white;
+  padding: 5px;
+  z-index: 3;
+  animation: popup 1s ease-in-out;
 
+
+
+  label {
+    font-weight: 900;
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    margin-top: -5px;
+    margin-bottom: -15px;
+    cursor: pointer;
+  }
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.pop-up-container {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  grid-template-rows: repeat(2, fit-content(80px));
+  width: 100%;
+  padding: 3px;
+  gap: 0px 50px;
+
+  img {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-bottom: 10px;
+    max-width: 119px;
+    width: 100%;
+    justify-self: center;
+  }
+
+  p {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    align-self: center;
+    font-weight: 600;
+    text-align: left;
+    line-height: 18px;
+    font-size: 14px;
+  }
+
+  button {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    min-width: unset;
+    box-shadow: none;
+    padding: 5px 15px;
+    font-size: 12px;
+    line-height: 18px;
+    justify-self: center;
+  }
+}
+
+.pop-up:has(#close:checked) {
+  display: none;
+}
+
+
+
+/*
+************END***********
+*/
 /*
 **************************
        video-section
@@ -366,10 +456,12 @@ p>.speaker {
 @keyframes btnslideinleft {
   0% {
     transform: translateX(-100px);
+    opacity: 0;
   }
 
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -381,10 +473,12 @@ p>.speaker {
 @keyframes btnslideinright {
   0% {
     transform: translateX(100px);
+    opacity: 0;
   }
 
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -850,7 +944,7 @@ Why schools like yours choose TSL
 #daniel-next:checked~#daniel,
 #angie-next:checked~#angie,
 #liz-next:checked~#liz {
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   display: inherit;
   top: 0;
@@ -877,7 +971,7 @@ Why schools like yours choose TSL
 #abi-back:checked~#abi,
 #daniel-back:checked~#daniel,
 #angie-back:checked~#angie {
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   display: inherit;
   top: 0;
@@ -1080,7 +1174,7 @@ main {
   background-image: url(img/background.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-size: 100vw;
+  background-size: 100%;
   padding-bottom: 20px;
 }
 
@@ -1464,6 +1558,23 @@ footer .logo-footer {
     max-width: 768px;
   }
 
+  .pop-up-container {
+    gap: 0px 20px;
+    padding: 10px;
+
+    p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 0px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 15px 30px;
+      line-height: 25px;
+    }
+  }
+
   .video-section h1 {
     font-size: 30px;
     line-height: 45px;
@@ -1589,7 +1700,7 @@ footer .logo-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    width: 769px;
+    width: 755px;
     margin-left: 0px;
     margin-right: 0px;
 
@@ -1758,7 +1869,7 @@ footer .logo-footer {
 
     h2 {
       margin-bottom: 30px;
-      width: 738px;
+      width: 720px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -1831,6 +1942,41 @@ footer .logo-footer {
 }
 
 @media (min-width: 992px) {
+  .pop-up-container {
+    grid-template-columns: 1fr 2.3fr 1fr;
+    grid-template-rows: fit-content(80px);
+    gap: 0px 10px;
+
+    img {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      align-self: center;
+      justify-self: flex-start;
+      margin-bottom: 0px;
+    }
+
+    p {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      margin-left: 20px;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+
+    button {
+      grid-row: 1/2;
+      grid-column: 3/4;
+      align-self: center;
+    }
+  }
+
+  .pop-up label {
+    margin-top: 5px;
+    margin-right: 12px;
+    margin-bottom: -24px;
+  }
+
   .video-section h1 {
     font-size: 40px;
     line-height: 62px;
@@ -2102,6 +2248,15 @@ footer .logo-footer {
   ::-webkit-scrollbar-thumb {
     height: 195px;
   }
+
+  .pop-up-container {
+    grid-template-columns: 0.9fr 4fr 1fr;
+    gap: 0px 19px;
+
+    p {
+      margin-left: 0px;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2362,6 +2517,7 @@ footer .logo-footer {
   .why>div:nth-child(even)>picture {
     align-self: flex-start;
     padding-top: 15px;
+    margin-top: -9px;
   }
 
   .why>div {
@@ -2370,7 +2526,6 @@ footer .logo-footer {
 
     picture {
       max-width: 747px;
-      margin-top: -9px;
     }
 
     div {
@@ -2520,8 +2675,6 @@ footer .logo-footer {
     max-width: 1260px;
   }
 }
-
-
 
 /*
 ************END***********
