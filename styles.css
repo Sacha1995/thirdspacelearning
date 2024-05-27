@@ -1234,6 +1234,9 @@ footer .logo-footer {
   .btn {
     min-width: 166px;
   }
+  .come-down .btn {
+    min-width: unset;
+  }
   .carousel-container {
     height: 473px;
   }
@@ -1301,22 +1304,39 @@ footer .logo-footer {
   .container-form {
     height: 510px;
   }
+  .container-grid-maths {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   .container-banner {
     padding: 20px 42px;
   }
   .container-carousel-img {
     flex-direction: column;
   }
+  .container-ready {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 640px) {
   .container-footer,
   .container-header,
-  .consistent > div {
+  .consistent > div,
+  .video-section,
+  .maths-tutoring {
     max-width: 640px;
   }
   .consistent > div {
     margin-left: auto;
     margin-right: auto;
+  }
+  .container-grid-maths {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .container-banner {
+    padding: 20px 20px;
   }
 }
 @media (min-width: 768px) {
