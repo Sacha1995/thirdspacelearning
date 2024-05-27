@@ -947,14 +947,14 @@ Why schools like yours choose TSL
   margin-bottom: 29px;
 }
 
-.carousel-item p:nth-child(3) {
+.carousel-item p:nth-child(2) {
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 2px;
   ;
 }
 
-.carousel-item p:nth-child(4) {
+.carousel-item p:nth-child(3) {
   font-size: 13px;
   margin-bottom: 7px;
   ;
@@ -1475,6 +1475,76 @@ footer .logo-footer {
     height: 170px;
   }
 
+  .container-footer,
+  .container-header,
+  .consistent>div,
+  .maths-tutoring,
+  .video-section {
+    max-width: 768px;
+  }
+
+  .video-section h1 {
+    font-size: 30px;
+    line-height: 45px;
+
+    span {
+      font-size: 35px;
+    }
+  }
+
+  .hear {
+    font-size: 15px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  .consistent h4 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .container-links {
+    height: 140px;
+    padding: 20px;
+
+    a {
+      font-size: 20px;
+      display: inline;
+
+      .right-arrow {
+        display: inline-block;
+        width: 20px;
+        padding-left: 7px;
+      }
+    }
+  }
+
+  .consistent {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  #cost-effective,
+  #free-primary,
+  #free-secondary,
+  #premium-primary {
+    top: -536px;
+    left: 54%;
+  }
+
+  .consistent div>h4,
+  .consistent div>p,
+  .consistent div .container-form>label {
+    width: 48%;
+  }
+
+  .container-form {
+    height: 218px;
+  }
+
+
   header a,
   header .come-down .dropdown {
     font-size: 20px;
@@ -1539,6 +1609,8 @@ footer .logo-footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     width: 769px;
+    margin-left: 0px;
+    margin-right: 0px;
 
     div {
       padding: 0px 15px;
@@ -1551,10 +1623,13 @@ footer .logo-footer {
     }
   }
 
-  .banner {
-    padding: 40px 20px;
-    margin: 0px auto 40px auto;
-    max-width: 768px;
+  .container-banner {
+    padding: 40px 27px;
+    margin-bottom: 42px;
+  }
+
+  .why {
+    margin-bottom: 32px;
   }
 
   .why h2 {
@@ -1570,8 +1645,15 @@ footer .logo-footer {
   }
 
   .why>div {
-    max-width: 768;
     margin: 0px auto;
+
+    picture {
+      max-width: 432px;
+    }
+
+    div {
+      max-width: 320px;
+    }
   }
 
   .why>div>picture,
@@ -1621,6 +1703,99 @@ footer .logo-footer {
     font-size: 20px;
     line-height: 27px;
   }
+
+  .container-turning-cards {
+    height: 294px;
+  }
+
+  .carousel-item {
+    width: 671px;
+    height: 413px;
+    padding: 30px 52px;
+  }
+
+  #catherine-next:checked~#catherine,
+  #mandy-next:checked~#mandy,
+  #gemma-next:checked~#gemma,
+  #abi-next:checked~#abi,
+  #daniel-next:checked~#daniel,
+  #angie-next:checked~#angie,
+  #liz-next:checked~#liz,
+  #maria-back:checked~#maria,
+  #catherine-back:checked~#catherine,
+  #mandy-back:checked~#mandy,
+  #gemma-back:checked~#gemma,
+  #abi-back:checked~#abi,
+  #daniel-back:checked~#daniel,
+  #angie-back:checked~#angie {
+    @include flex(row, flex-start, flex-start);
+    padding-bottom: 105px;
+  }
+
+  .container-carousel-img {
+    align-self: stretch;
+    width: 350px;
+  }
+
+  .carousel-item .logo-carousel {
+    width: 70px;
+  }
+
+  .carousel-item p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .carousel-item div>p:first-child {
+    margin-top: 10px;
+  }
+
+  .container-arrows {
+    left: 3%;
+    width: 95%;
+  }
+
+  .see-all-case-studies {
+    margin-top: -18px;
+    margin-bottom: 60px;
+    padding: 15px 40px;
+  }
+
+  .container-working {
+    margin: 0px 0px 62px 0px;
+    padding: 14px 30px 40px 30px;
+    width: 100%;
+
+    h2 {
+      margin-bottom: 30px;
+      width: 738px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .container-cards {
+    display: grid;
+    grid-template-columns: 345px 345px;
+    grid-template-rows: repeat(3, 324px);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 58px 28px;
+
+    .cards {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      height: 325px;
+      max-width: 350px;
+      padding: 20px 5px;
+      @include flex(column, center, center)
+    }
+  }
+
+  .container-ready .btn {
+    padding: 15px 40px;
+  }
+
 }
 
 @media (min-width: 781px) {
