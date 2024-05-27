@@ -730,6 +730,14 @@ Why schools like yours choose TSL
   height: 619px;
 }
 
+.schools-supported {
+  animation: btnslideinleft 2s;
+}
+
+.turning-cards-two {
+  animation: btnslideinright 2s;
+}
+
 .turning-cards {
   max-width: 500px;
   height: 300px;
