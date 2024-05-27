@@ -932,14 +932,6 @@ Why schools like yours choose TSL
   transform: translateX(-50%);
 }
 
-@keyframes slideinleft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 .carousel-container {
   position: relative;
   width: 100%;

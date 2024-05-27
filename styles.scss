@@ -933,18 +933,6 @@ Why schools like yours choose TSL
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-// min-height: 413px; minimum height content for carousel 
-
-// #maria {
-//   display: inherit;
-//   position: absolute;
-//   top: 0;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   z-index: 2;
-//   visibility: visible;
-// }
-
 #catherine-next:checked~#catherine,
 #mandy-next:checked~#mandy,
 #gemma-next:checked~#gemma,
@@ -985,19 +973,28 @@ Why schools like yours choose TSL
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  // animation-name: slideinleft;
-  // animation-duration: 2s;
 }
 
-@keyframes slideinleft {
-  0% {
-    transform: translateX(-100%);
-  }
+// #maria-back:checked~#maria:not(.container-arrows),
+// #catherine-back:checked~#catherine:not(.container-arrows),
+// #mandy-back:checked~#mandy:not(.container-arrows),
+// #gemma-back:checked~#gemma:not(.container-arrows),
+// #abi-back:checked~#abi,
+// #daniel-back:checked~#daniel,
+// #angie-back:checked~#angie {
+//   animation-name: slideinleft;
+//   animation-duration: 2s;
+// }
 
-  100% {
-    transform: translateX(-50%);
-  }
-}
+// @keyframes slideinleft {
+//   0% {
+//     transform: translateX(-100%);
+//   }
+
+//   100% {
+//     transform: translateX(-50%);
+//   }
+// }
 
 .carousel-container {
   position: relative;
