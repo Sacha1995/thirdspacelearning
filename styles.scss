@@ -1900,6 +1900,23 @@ footer .logo-footer {
     }
   }
 
+  .card-NTP,
+  .card-rs {
+    animation: comeup 2s ease-in both;
+  }
+
+  .card-UCL,
+  .card-wwfcsc {
+    animation: comeup 2s ease-in both;
+    animation-delay: 1s;
+  }
+
+  .card-CFEY,
+  .card-IDS {
+    animation: comeup 2s ease-in both;
+    animation-delay: 2s;
+  }
+
   .container-ready .btn {
     padding: 15px 40px;
   }
@@ -2610,6 +2627,20 @@ footer .logo-footer {
     h2 {
       width: 1100px;
     }
+  }
+
+  .card-NTP,
+  .card-rs,
+  .card-UCL,
+  .card-wwfcsc {
+    animation: comeup 2s ease-in both;
+    animation-iteration-count: 1;
+  }
+
+  .card-CFEY,
+  .card-IDS {
+    animation: comeup 2s ease-in both;
+    animation-delay: 1s;
   }
 
   .card-UCL img,
