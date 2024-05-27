@@ -1,13 +1,5 @@
 /*
 **************************
-          name
-**************************
-*/
-/*
-************END***********
-*/
-/*
-**************************
           SCSS
 **************************
 */
@@ -217,7 +209,7 @@ nav ul li:focus-within ul {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 4;
   background-color: rgba(17, 24, 39, 0.5);
   pointer-events: none;
 }
@@ -297,7 +289,7 @@ h1 {
 .video-section p {
   margin-bottom: 42px;
 }
-.video-section img {
+.video-section picture {
   display: none;
 }
 
@@ -1879,18 +1871,27 @@ footer .logo-footer {
 }
 @media (min-width: 1280px) {
   .container-footer,
-  .container-header {
+  .container-header,
+  .video-section,
+  .consistent > div,
+  .maths-tutoring {
     max-width: 1280px;
   }
   ::-webkit-scrollbar-thumb {
     height: 205px;
   }
+  header > div {
+    display: block;
+    margin: 0px auto;
+  }
   .container-header {
     height: 69px;
+    margin-left: auto;
+    margin-right: auto;
   }
   header .backdrop {
     display: block;
-    background-color: none;
+    position: inherit;
     height: auto;
     width: auto;
   }
@@ -2022,10 +2023,201 @@ footer .logo-footer {
     width: 154px;
     margin-right: 172px;
   }
-  .links-footer {
+  .video-section .links-footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: fit-content(100px) fit-content(100px);
     gap: 0px 40px;
+  }
+  .video-section picture {
+    display: inline-block;
+    width: 303px;
+    padding-bottom: 79px;
+  }
+  .container-video-computer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1255px;
+  }
+  .container-video-computer .videoandtext {
+    flex-grow: 2;
+  }
+  .container-btn {
+    margin-top: -4px;
+    width: 458px;
+  }
+  #cost-effective,
+  #free-primary,
+  #free-secondary,
+  #premium-primary {
+    top: -345px;
+    width: 616px;
+    left: 50%;
+  }
+  .container-links {
+    height: 92px;
+  }
+  .container-form {
+    height: 170px;
+  }
+  .container-grid-maths {
+    width: 1280px;
+  }
+  section {
+    margin-bottom: 56px !important;
+  }
+  .maths-tutoring h2 {
+    max-width: 1240px;
+  }
+  .maths-tutoring .btn {
+    padding: 15px 40px;
+    line-height: unset;
+    margin-bottom: 18px;
+  }
+  .container-grid-maths div p {
+    margin-bottom: 15px;
+  }
+  .banner {
+    max-width: 1180px;
+  }
+  .banner img {
+    max-width: 290px;
+  }
+  .container-banner {
+    margin-bottom: 60px;
+  }
+  .why > div:nth-child(even),
+  .why > div:nth-child(odd) {
+    align-items: center;
+  }
+  .why > div:nth-child(even) > picture {
+    align-self: flex-start;
+    padding-top: 15px;
+  }
+  .why > div {
+    padding: 15px 0px;
+  }
+  .why > div picture {
+    max-width: 747px;
+    margin-top: -9px;
+  }
+  .why > div div {
+    max-width: 533px;
+  }
+  .container-turning-cards {
+    margin-top: 76px;
+    margin-bottom: 100px;
+  }
+  .container-turning-cards .turning-cards {
+    gap: 141px;
+    max-width: 1139px;
+  }
+  .container-turning-cards .turning-cards .number {
+    font-size: 89px;
+    margin-top: 67px;
+    margin-bottom: 83px;
+  }
+  .container-turning-cards .turning-cards p {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .turning-cards-inner .front,
+  .turning-cards-inner .back {
+    padding: 40px 42px;
+  }
+  .carousel-item {
+    width: 1020px;
+    gap: 42px;
+  }
+  .carousel-item .logo-carousel {
+    width: 105px;
+  }
+  .container-arrows {
+    left: -11.5%;
+    width: 123.5%;
+    top: -91px;
+  }
+  .carousel-item div > p:first-child {
+    margin-top: 0px;
+    padding-right: 41px;
+    padding-bottom: 8px;
+    width: 775px;
+  }
+  #catherine div > p:first-child,
+  #gemma div > p:first-child,
+  #abi div > p:first-child {
+    padding-bottom: 64px;
+  }
+  #mandy div > p:first-child,
+  #daniel div > p:first-child,
+  #angie div > p:first-child,
+  #liz div > p:first-child {
+    padding-bottom: 36px;
+  }
+  .see-all-case-studies {
+    margin-bottom: 45px;
+  }
+  .container-working {
+    margin-bottom: 42px;
+  }
+  .container-working img {
+    padding-top: 34px;
+    margin-bottom: 20px;
+  }
+  .container-working h2 {
+    width: 1100px;
+  }
+  .card-UCL img,
+  .card-wwfcsc img,
+  .card-NTP img {
+    padding-top: 39px;
+    margin-bottom: 2px;
+  }
+  .card-IDS img {
+    padding-top: 42px;
+    margin-bottom: 6px;
+  }
+  .card-CFEY img {
+    padding-top: 60px;
+    margin-bottom: 20px;
+  }
+  .container-cards {
+    grid-template-columns: repeat(4, 294px);
+    grid-template-rows: repeat(2, 336px);
+    gap: 44px 28px;
+  }
+  .container-cards .cards {
+    width: 290px;
+    height: 320px;
+    padding: 20px 30px;
+    gap: 19px;
+  }
+  .card-CFEY {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .card-IDS {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .container-ready h2 {
+    line-height: 32px;
+  }
+  .container-ready {
+    margin-bottom: 99px;
+  }
+  .links-footer {
+    grid-template-columns: repeat(3, 266px);
+    grid-template-rows: repeat(2, fit-content(100px));
+    gap: 0px 18px;
+  }
+  .footer-flex .links-footer {
+    padding-right: 0px;
+    margin-bottom: -11px;
+  }
+  .footer-flex {
+    max-width: 1260px;
   }
 }
 /*
