@@ -108,7 +108,7 @@ h4 {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 6px;
 }
 
 /* Handle */
@@ -150,7 +150,7 @@ header img {
   max-width: 350px;
   width: 100%;
   margin: 0px auto;
-  @include flex(row, space-around, center);
+  @include flex(row, space-between, center);
   gap: 10px;
 }
 
@@ -163,14 +163,6 @@ header img {
           navbar
 **************************
 */
-
-.line {
-  background-color: #6b7280;
-  height: 2.4px;
-  border-radius: 25px;
-  width: 20px;
-  margin-bottom: 4px;
-}
 
 .burger {
   margin-top: 3px;
@@ -218,6 +210,10 @@ header .come-down {
   }
 }
 
+.logo-dropdown {
+  margin-bottom: 16px;
+}
+
 .backdrop>.come-down>li:not(a) {
   font-weight: 700;
 }
@@ -227,11 +223,11 @@ header .come-down {
   text-decoration: underline;
 }
 
-.focus:focus-within .burger {
+nav ul li:focus-within .burger {
   border: #d9d9da solid 2px;
 }
 
-.focus:focus-within>.backdrop>.come-down {
+nav ul li:focus-within ul {
   display: block;
 }
 
@@ -247,11 +243,11 @@ header .come-down {
   pointer-events: none;
 }
 
-.focus:focus-within>.backdrop {
+nav ul li:focus-within>.backdrop {
   display: block;
 }
 
-.focus:focus-within:has(.burger) {
+nav ul li:focus-within:has(.burger) {
   pointer-events: none;
 }
 
@@ -266,6 +262,10 @@ header .come-down {
 .header-icon {
   margin-bottom: 0px;
   width: 39px;
+}
+
+.dropdown .arrow-down {
+  display: none;
 }
 
 /*
@@ -689,6 +689,7 @@ Why schools like yours choose TSL
 */
 .container-turning-cards {
   margin: 0px 14px 64px 14px;
+  height: 619px;
 }
 
 .turning-cards {
@@ -696,8 +697,8 @@ Why schools like yours choose TSL
   height: 300px;
   width: 100%;
   perspective: 1000px;
-  margin: 0px auto 10px auto;
   cursor: pointer;
+  margin: 0px auto 10px auto;
 }
 
 /* This container is needed to position the front and back side */
@@ -708,10 +709,11 @@ Why schools like yours choose TSL
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  margin: 0px auto 10px auto;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.turning-cards:hover .turning-cards-inner {
+.turning-cards .turning-cards-inner:hover {
   transform: rotateY(180deg);
 }
 
@@ -753,12 +755,6 @@ Why schools like yours choose TSL
     font-weight: 400;
     margin-bottom: 27px;
     font-size: 15px;
-
-    span {
-      display: inline-block;
-      padding-bottom: 17px;
-      ;
-    }
   }
 }
 
@@ -781,7 +777,7 @@ Why schools like yours choose TSL
   font-size: 45px;
   line-height: 0px;
   margin-bottom: 72px;
-  margin-top: 33px;
+  margin-top: 78px;
 }
 
 .schools-supported .number {
@@ -1367,10 +1363,36 @@ footer .logo-footer {
   }
 }
 
+@media (min-width: 576px) {
+
+  .video-section,
+  .container-footer,
+  .container-header,
+  .consistent>div,
+  .maths-tutoring {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 600px) {
   header .come-down {
-    width: 280px;
+    max-width: none;
+    width: 352px;
     padding: 32px 40px 32px 32px;
+  }
+
+  .carousel-item {
+    height: 413px;
+  }
+
+  .carousel-container {
+    height: 493px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 150px;
   }
 
   .links-footer {
@@ -1379,21 +1401,188 @@ footer .logo-footer {
     grid-template-rows: fit-content(100px) fit-content(100px) fit-content(100px);
   }
 
-  .container-footer {
+  .container-footer,
+  .container-header,
+  .consistent>div,
+  .maths-tutoring {
     max-width: 600px;
   }
 }
 
 @media (min-width: 640px) {
-  .container-footer {
+
+  .container-footer,
+  .container-header,
+  .consistent>div {
     max-width: 640px;
+  }
+
+  .consistent>div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar-thumb {
+    height: 170px;
+  }
+
+  header a,
+  header .come-down .dropdown {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  main p {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .come-down .dropdown .btn {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 7px 24px;
+  }
+
+  header .come-down {
+    width: 444px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .video-section>p {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .video-section {
+    padding-top: 60px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 15px 30px;
+    line-height: 27px;
+  }
+
+  .maths-tutoring h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+
+  .maths-tutoring {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px auto 35px auto;
+  }
+
+  .container-grid-maths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 769px;
+
+    div {
+      padding: 0px 15px;
+
+      p {
+        font-size: 20px;
+        line-height: 27px;
+        padding: 0px 24px;
+      }
+    }
+  }
+
+  .banner {
+    padding: 40px 20px;
+    margin: 0px auto 40px auto;
+    max-width: 768px;
+  }
+
+  .why h2 {
+    margin-bottom: 20px;
+  }
+
+  .why>div:nth-child(odd) {
+    @include flex(row, center, flex-start)
+  }
+
+  .why>div:nth-child(even) {
+    @include flex(row-reverse, center, flex-start)
+  }
+
+  .why>div {
+    max-width: 768;
+    margin: 0px auto;
+  }
+
+  .why>div>picture,
+  .why>div>div {
+    padding: 0px 15px;
+  }
+
+  .why>div>picture {
+    flex-basis: 260%;
+  }
+
+  .why div div {
+
+    q {
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .btn {
+      line-height: unset;
+      padding: 15px 16px;
+    }
+  }
+
+  .turning-cards {
+    @include flex(row, center, center);
+    max-width: 768px;
+    margin: 0px auto;
+    gap: 30px;
+
+    .turning-cards-inner .back {
+      border-radius: 40px 0px 40px 40px;
+    }
+
+    .turning-cards-inner .front {
+      border-radius: 0px 40px 40px 40px;
+    }
+  }
+
+  .turning-cards-inner .front,
+  .turning-cards-inner .back {
+    padding: 40px 50px;
+  }
+
+  .turning-cards .turning-cards-inner .back p,
+  .turning-cards .turning-cards-inner .back q {
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 
 @media (min-width: 781px) {
-  .container-footer {
+
+  .container-footer,
+  .container-header {
     max-width: 781px;
   }
+
+
 
   .contact span,
   footer p,
@@ -1408,6 +1597,12 @@ footer .logo-footer {
     @include flex(row, center, flex-start);
   }
 
+  .come-down .dropdown .btn {
+    font-size: 20px;
+    height: unset;
+    padding: 11px 25px;
+  }
+
   footer {
     padding: 32px 0px;
   }
@@ -1415,12 +1610,17 @@ footer .logo-footer {
   footer p {
     text-align: right;
   }
-
 }
 
 @media (min-width: 1024px) {
-  .container-footer {
+
+  .container-footer,
+  .container-header {
     max-width: 1024px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 185px;
   }
 
   .footer-flex {
@@ -1432,9 +1632,173 @@ footer .logo-footer {
   }
 }
 
+@media (min-width: 1200px) {
+  ::-webkit-scrollbar-thumb {
+    height: 195px;
+  }
+}
+
 @media (min-width: 1280px) {
-  .container-footer {
+
+  .container-footer,
+  .container-header {
     max-width: 1280px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 205px;
+  }
+
+  .container-header {
+    height: 69px;
+  }
+
+  header .backdrop {
+    display: block;
+    background-color: none;
+    height: auto;
+    width: auto;
+  }
+
+  .dropdown .arrow-down {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid black;
+    display: inline-block;
+    position: static;
+    padding-top: 2px;
+  }
+
+  header .come-down {
+    @include flex(row, space-between, center);
+    position: static;
+    height: 69px;
+    padding: 0px;
+    width: 1280px;
+  }
+
+  .focus {
+    pointer-events: none;
+  }
+
+  nav ul li:focus-within .burger {
+    display: none;
+  }
+
+  header .focus .burger,
+  .container-header .first-logo-header {
+    display: none;
+  }
+
+  nav ul li:focus-within ul li,
+  nav ul li:hover .come-down>li {
+    @include flex(row, space-between, center);
+    height: 69px;
+    padding: 0px;
+    position: relative;
+    width: auto;
+    cursor: pointer;
+  }
+
+  nav ul li:focus-within div>ul {
+    @include flex(row, space-between, center);
+    position: static;
+    height: 69px;
+    padding: 0px;
+    width: 1280px;
+  }
+
+  nav ul li:focus-within ul li ul {
+    display: none;
+  }
+
+  nav ul li:hover .arrow-down,
+  nav ul li:focus-within .arrow-down {
+    margin-top: 1px;
+    margin-left: 4px;
+  }
+
+  header .come-down .dropdown ul li {
+    font-weight: bold;
+  }
+
+  .come-down>.dropdown>ul {
+    display: none;
+    font-weight: bold;
+
+    li {
+      margin: 0;
+      padding-bottom: 8px;
+      height: unset;
+
+      a {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .maths-tutoring-for-schools>ul {
+    width: 241px;
+  }
+
+  .how-it-works>ul {
+    width: 122px;
+  }
+
+  .Resources>ul {
+    width: 313px;
+  }
+
+  .pricing>ul {
+    width: 316px;
+  }
+
+  header .come-down li:hover>ul,
+  header .come-down li:focus-within>ul {
+    @include flex(column, flex-start, flex-start);
+    position: absolute;
+    top: 42px;
+    left: 0;
+    display: block;
+    background-color: white;
+    padding: 16px 16px 8px 16px;
+    box-shadow: 0px 1px 3.25px rgba(0, 0, 0, 0.2);
+  }
+
+  .come-down li ul li:hover {
+    color: #2779f5;
+    cursor: pointer;
+  }
+
+  .come-down li a:hover {
+    text-decoration: none;
+    color: #2779f5;
+  }
+
+  .come-down .dropdown .btn {
+    font-size: 20px;
+    padding: 8px 24px;
+    height: auto;
+    line-height: unset;
+  }
+
+  header .btn-yellow {
+    color: black;
+    margin-right: 8px;
+    margin-left: 15px;
+  }
+
+  header .come-down .dropdown,
+  .blog {
+    margin-bottom: 2px;
+    font-size: 15px;
+
+  }
+
+  .logo-dropdown {
+    margin-bottom: 0px;
+    width: 154px;
+    margin-right: 172px;
   }
 
   .links-footer {

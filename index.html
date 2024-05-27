@@ -94,7 +94,7 @@
   <body>
     <header>
       <div class="container-header">
-        <a href="#"
+        <a href="#" class="first-logo-header"
           ><img
             src="img/tsl-logo.webp"
             alt="Third space learning logo"
@@ -113,11 +113,12 @@
                       ><img
                         src="img/tsl-logo.webp"
                         alt="Third space learning logo"
-                        class="logo"
+                        class="logo logo-dropdown"
                     /></a>
                   </li>
-                  <li class="dropdown maths-tutoring-for-schools">
+                  <li tabindex="0" class="dropdown maths-tutoring-for-schools">
                     Maths Tutoring for Schools
+                    <div class="arrow-down"></div>
                     <ul>
                       <li><a href="#">National Tutoring Programme</a></li>
                       <li><a href="#">Primary Programmes</a></li>
@@ -125,16 +126,18 @@
                       <li><a href="#">Multi-Academy Trusts</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown how-it-works">
+                  <li tabindex="0" class="dropdown how-it-works">
                     How it Works
+                    <div class="arrow-down"></div>
                     <ul>
                       <li><a href="#">Impact</a></li>
                       <li><a href="#">Case Studies</a></li>
                       <li><a href="#">Our Tutors</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown Resources">
+                  <li tabindex="0" class="dropdown Resources">
                     Resources
+                    <div class="arrow-down"></div>
                     <ul>
                       <li>
                         <a href="#">Primary Maths Resources &#40;Free&#41;</a>
@@ -163,8 +166,9 @@
                       <li><a href="#">Senior Leader Zone &#40;Free&#41;</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown pricing">
+                  <li tabindex="0" class="dropdown pricing">
                     Pricing
+                    <div class="arrow-down"></div>
                     <ul>
                       <li><a href="#">Maths Tutoring Pricing</a></li>
                       <li>
@@ -172,7 +176,9 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown blog">Blog</li>
+                  <li class="dropdown blog">
+                    <a href="" class="blog">Blog</a>
+                  </li>
                   <li class="dropdown">
                     <button class="btn btn-yellow request-quote-btn">
                       Request a quote
@@ -439,83 +445,85 @@
       <!-- Maths tutoring programmes -->
       <section class="maths-tutoring">
         <h2>Maths tutoring programmes trusted by 4,000 schools since 2013</h2>
-        <div>
-          <picture>
-            <source
-              media="(max-width: 300px)"
-              src="./img/boost-ks2-progress-in-maths-300x228.png"
-            />
-            <source
-              media="(min-width: 301px)"
-              src="./img/boost-ks2-progress-in-maths.png"
-            />
-            <img
-              src="img/boost-ks2-progress.webp"
-              alt="Teacher explaining fractions online"
-            />
-          </picture>
-          <h3>Boost KS2 progress</h3>
-          <p>
-            Address gaps from Year 1-6, build arithmetic and reasoning skills
-            and prepare pupils for KS2 maths SATs.
-          </p>
-          <button class="btn btn-blue view-ks2">View KS2 programmes</button>
-        </div>
-        <div>
-          <picture>
-            <source
-              media="(max-width: 300px)"
-              src="./img/Year-7-programme-slide-image-300x228.png"
-            />
-            <source
-              media="(min-width: 301px)"
-              src="./img/Year-7-programme-slide-image-768x583.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              src="./img/Year-7-programme-slide-image.png"
-            />
-            <img
-              src="img/Year-7-programme-slide-image.webp"
-              alt="Teacher explaining decimals online"
-            />
-          </picture>
-          <h3>Ease KS3 transition</h3>
-          <p>
-            Help ease the transition for Year 7 students who are struggling to
-            access the KS3 curriculum.
-          </p>
-          <button class="btn btn-green view-year7">
-            View Year 7 programme
-          </button>
-        </div>
-        <div>
-          <picture>
-            <source
-              media="(max-width: 300px)"
-              src="./img/GCSE-revision-slide-image-2-300x228.png"
-            />
-            <source
-              media="(min-width: 301px)"
-              src="./img/GCSE-revision-slide-image-2-768x583.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              src="./img/GCSE-revision-slide-image-2.png"
-            />
-            <img
-              src="img/GCSE-programme.webp"
-              alt="Teacher explaining angles online"
-            />
-          </picture>
-          <h3>Prepare for GCSEs</h3>
-          <p>
-            Provide targeted revision opportunities to help more students
-            achieve their target grade.
-          </p>
-          <button class="btn btn-darkblue view-GCSE">
-            View GCSE programme
-          </button>
+        <div class="container-grid-maths">
+          <div>
+            <picture>
+              <source
+                media="(max-width: 300px)"
+                src="./img/boost-ks2-progress-in-maths-300x228.png"
+              />
+              <source
+                media="(min-width: 301px)"
+                src="./img/boost-ks2-progress-in-maths.png"
+              />
+              <img
+                src="img/boost-ks2-progress.webp"
+                alt="Teacher explaining fractions online"
+              />
+            </picture>
+            <h3>Boost KS2 progress</h3>
+            <p>
+              Address gaps from Year 1-6, build arithmetic and reasoning skills
+              and prepare pupils for KS2 maths SATs.
+            </p>
+            <button class="btn btn-blue view-ks2">View KS2 programmes</button>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(max-width: 300px)"
+                src="./img/Year-7-programme-slide-image-300x228.png"
+              />
+              <source
+                media="(min-width: 301px)"
+                src="./img/Year-7-programme-slide-image-768x583.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                src="./img/Year-7-programme-slide-image.png"
+              />
+              <img
+                src="img/Year-7-programme-slide-image.webp"
+                alt="Teacher explaining decimals online"
+              />
+            </picture>
+            <h3>Ease KS3 transition</h3>
+            <p>
+              Help ease the transition for Year 7 students who are struggling to
+              access the KS3 curriculum.
+            </p>
+            <button class="btn btn-green view-year7">
+              View Year 7 programme
+            </button>
+          </div>
+          <div>
+            <picture>
+              <source
+                media="(max-width: 300px)"
+                src="./img/GCSE-revision-slide-image-2-300x228.png"
+              />
+              <source
+                media="(min-width: 301px)"
+                src="./img/GCSE-revision-slide-image-2-768x583.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                src="./img/GCSE-revision-slide-image-2.png"
+              />
+              <img
+                src="img/GCSE-programme.webp"
+                alt="Teacher explaining angles online"
+              />
+            </picture>
+            <h3>Prepare for GCSEs</h3>
+            <p>
+              Provide targeted revision opportunities to help more students
+              achieve their target grade.
+            </p>
+            <button class="btn btn-darkblue view-GCSE">
+              View GCSE programme
+            </button>
+          </div>
         </div>
       </section>
       <!-- banner -->
@@ -545,19 +553,21 @@
               alt="Overview of planned sessions"
             />
           </picture>
-          <h3>Reach more pupils at once</h3>
-          <p>
-            You <b>choose which pupils</b> need support&#59; we&#39;ll provide a
-            <b>dedicated specialist maths tutor</b> and a
-            <b>personalised learning journey</b> for each one
-          </p>
-          <q
-            >This provides the opportunity for a large number of children to
-            engage in a bespoke maths intervention at the same time - with
-            personalised objectives so everyone is at the right level.
-          </q>
-          <p>Jane Powell, Assistant Head, Barton Seagrave Primary School</p>
-          <button class="btn btn-blue how-it-works-btn">How it works</button>
+          <div>
+            <h3>Reach more pupils at once</h3>
+            <p>
+              You <b>choose which pupils</b> need support&#59; we&#39;ll provide
+              a <b>dedicated specialist maths tutor</b> and a
+              <b>personalised learning journey</b> for each one
+            </p>
+            <q
+              >This provides the opportunity for a large number of children to
+              engage in a bespoke maths intervention at the same time - with
+              personalised objectives so everyone is at the right level.
+            </q>
+            <p>Jane Powell, Assistant Head, Barton Seagrave Primary School</p>
+            <button class="btn btn-blue how-it-works-btn">How it works</button>
+          </div>
         </div>
 
         <div class="address-individual-gaps">
@@ -579,21 +589,23 @@
               alt="Display of setting individual goals for student"
             />
           </picture>
-          <h3>Address individual gaps</h3>
-          <p>
-            Tutoring content, pitch and pace is fully personalised following
-            <b>diagnostic and in-session assessments</b>, meaning you can plug
-            individual gaps across cohorts.
-          </p>
-          <q
-            >No matter how much of a good teacher you are, you can never get to
-            30 children and do 30 different pieces of work and that is what is
-            needed. It's the best type of intervention you can have</q
-          >
-          <p>Angela Kershaw, Maths Leader, St Augustine's Academy</p>
-          <button class="btn btn-blue school-reviews">
-            Read school reviews
-          </button>
+          <div>
+            <h3>Address individual gaps</h3>
+            <p>
+              Tutoring content, pitch and pace is fully personalised following
+              <b>diagnostic and in-session assessments</b>, meaning you can plug
+              individual gaps across cohorts.
+            </p>
+            <q
+              >No matter how much of a good teacher you are, you can never get
+              to 30 children and do 30 different pieces of work and that is what
+              is needed. It's the best type of intervention you can have</q
+            >
+            <p>Angela Kershaw, Maths Leader, St Augustine's Academy</p>
+            <button class="btn btn-blue school-reviews">
+              Read school reviews
+            </button>
+          </div>
         </div>
 
         <div class="maximise-school-funding">
@@ -615,21 +627,24 @@
               alt="Students working behind computers"
             />
           </picture>
-          <h3>Maximise school funding</h3>
-          <p>
-            We&#39;re proud to be the <b>most affordable DfE-approved</b> one to
-            one tutoring provider, with subsidised tutoring available through
-            the National Tutoring Programme
-          </p>
-          <q
-            >It&#39;s just as effective as bringing in a one to one tutor but
-            it&#39;s so much cheaper, so you can afford to have more children
-            doing it.</q
-          >
-          <p>Clare Sealy, Headteacher, St Matthias Primary School, London</p>
-          <button class="btn btn-blue pricing-funding">
-            Pricing and funding
-          </button>
+          <div>
+            <h3>Maximise school funding</h3>
+            <p>
+              We&#39;re proud to be the
+              <b>most affordable DfE-approved</b> one to one tutoring provider,
+              with subsidised tutoring available through the National Tutoring
+              Programme
+            </p>
+            <q
+              >It&#39;s just as effective as bringing in a one to one tutor but
+              it&#39;s so much cheaper, so you can afford to have more children
+              doing it.</q
+            >
+            <p>Clare Sealy, Headteacher, St Matthias Primary School, London</p>
+            <button class="btn btn-blue pricing-funding">
+              Pricing and funding
+            </button>
+          </div>
         </div>
 
         <div class="free-up-staff-time">
@@ -647,19 +662,21 @@
               alt="Profile of two students"
             />
           </picture>
-          <h3>Free up staff time</h3>
-          <p>
-            Schools have a reliable, consistent and easy-to-run intervention for
-            their target groups, giving class teachers
-            <b>more time to focus on whole class teaching</b>
-          </p>
-          <q
-            >It&#39;s organised and just happens for the children each week.
-            They look forward to it. It makes personalisation nice and easy -
-            for a change!</q
-          >
-          <p>Judy Coles, Headteacher, Hague Primary School</p>
-          <button class="btn btn-blue impact">Impact in schools</button>
+          <div>
+            <h3>Free up staff time</h3>
+            <p>
+              Schools have a reliable, consistent and easy-to-run intervention
+              for their target groups, giving class teachers
+              <b>more time to focus on whole class teaching</b>
+            </p>
+            <q
+              >It&#39;s organised and just happens for the children each week.
+              They look forward to it. It makes personalisation nice and easy -
+              for a change!</q
+            >
+            <p>Judy Coles, Headteacher, Hague Primary School</p>
+            <button class="btn btn-blue impact">Impact in schools</button>
+          </div>
         </div>
 
         <div class="save-on-staff-training">
@@ -677,19 +694,22 @@
               alt="Profile of two students"
             />
           </picture>
-          <h3>Save on staff training</h3>
-          <p>
-            All programmes are built by former maths teachers and pedagogy
-            experts&#59; all tutors are STEM specialists who complete intensive
-            initial and ongoing maths tutor training
-          </p>
-          <q
-            >It&#39;s such a fantastic, well-researched programme. It&#39;s had
-            a huge impact on our pupils&#39; maths learning. The tutors really
-            build pupils' metacognition..</q
-          >
-          <p>Simrat Mavi, Deputy Head, St Giles CE Primary School</p>
-          <button class="btn btn-blue meet-tutors">Meet our tutors</button>
+          <div>
+            <h3>Save on staff training</h3>
+            <p>
+              All programmes are built by former
+              <bold>maths teachers and pedagogy experts</bold>&#59; all tutors
+              are <bold>STEM specialists</bold> who complete intensive initial
+              and ongoing maths tutor training
+            </p>
+            <q
+              >It&#39;s such a fantastic, well-researched programme. It&#39;s
+              had a huge impact on our pupils&#39; maths learning. The tutors
+              really build pupils' metacognition..</q
+            >
+            <p>Simrat Mavi, Deputy Head, St Giles CE Primary School</p>
+            <button class="btn btn-blue meet-tutors">Meet our tutors</button>
+          </div>
         </div>
       </section>
       <!-- turning cards -->
@@ -708,24 +728,28 @@
                 &#34;This is fantastic!&#34;. I was thrilled that he had the
                 opportunity to see how engaged the students were.</q
               >
-              <p>Darren Madourie, Maths Teacher Holte School, Birmingham</p>
+              <p>
+                Darren Madourie, Maths Teacher<br />
+                Holte School, Birmingham
+              </p>
             </div>
           </div>
-        </div>
-        <div class="turning-cards turning-cards-two">
-          <div class="turning-cards-inner pupils-taught">
-            <div class="front">
-              <p class="number">162,075</p>
-              <p>Pupils taught</p>
-              <img src="img/cursor.svg" alt="Cursor hand" />
-            </div>
-            <div class="back">
-              <p class="quote-turning-cards">
-                <span>"This will really help me so much!<br /></span> I&#39;m
-                getting more and more confident for my SATs every time I do
-                these sessions! Thank you!"
-              </p>
-              <p>Year 6 pupil Liverpool</p>
+
+          <div class="turning-cards turning-cards-two">
+            <div class="turning-cards-inner pupils-taught">
+              <div class="front">
+                <p class="number">162,075</p>
+                <p>Pupils taught</p>
+                <img src="img/cursor.svg" alt="Cursor hand" />
+              </div>
+              <div class="back">
+                <p class="quote-turning-cards">
+                  "This will really help me so much!<br /><br />
+                  I&#39;m getting more and more confident for my SATs every time
+                  I do these sessions! Thank you!"
+                </p>
+                <p>Year 6 pupil<br />Liverpool</p>
+              </div>
             </div>
           </div>
         </div>
