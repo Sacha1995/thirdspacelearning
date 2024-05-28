@@ -558,10 +558,6 @@ input:checked + label {
   visibility: hidden;
 }
 
-#cost-effective {
-  visibility: visible;
-}
-
 input:checked label {
   text-decoration: underline;
 }
@@ -1631,6 +1627,7 @@ footer .logo-footer {
     width: 671px;
     height: 413px;
     padding: 30px 52px;
+    border-radius: 50px;
   }
   #catherine-next:checked ~ #catherine,
   #mandy-next:checked ~ #mandy,
@@ -2103,6 +2100,10 @@ footer .logo-footer {
     margin-top: 1px;
     margin-left: 4px;
   }
+  nav ul li:hover .blog,
+  nav ul li:focus-within .blog {
+    margin-bottom: 0px;
+  }
   header .come-down .dropdown ul li {
     font-weight: bold;
   }
@@ -2143,6 +2144,7 @@ footer .logo-footer {
     background-color: white;
     padding: 16px 16px 8px 16px;
     box-shadow: 0px 1px 3.25px rgba(0, 0, 0, 0.2);
+    z-index: 2;
   }
   .come-down li ul li:hover {
     color: #2779f5;
@@ -2287,6 +2289,7 @@ footer .logo-footer {
     left: -11.5%;
     width: 123.5%;
     top: -91px;
+    z-index: -1;
   }
   .carousel-item div > p:first-child {
     margin-top: 0px;
