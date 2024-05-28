@@ -25,7 +25,6 @@ $backgrounddark: rgb(249 248 248);
           general
 **************************
 */
-
 * {
   font-family: "Nunito", Sans-serif;
   scroll-behavior: smooth;
@@ -110,7 +109,6 @@ section {
 /*
 ************END***********
 */
-
 /*
 **************************
           header
@@ -142,13 +140,11 @@ header img {
 /*
 ************END***********
 */
-
 /*
 **************************
           navbar
 **************************
 */
-
 .burger {
   margin-top: 3px;
   border-radius: 7px;
@@ -274,8 +270,6 @@ nav ul li:focus-within:has(.burger) {
   z-index: 3;
   animation: popup 1s ease-in-out;
 
-
-
   label {
     font-weight: 900;
     font-size: 12px;
@@ -341,8 +335,6 @@ nav ul li:focus-within:has(.burger) {
 .pop-up:has(#close:checked) {
   display: none;
 }
-
-
 
 /*
 ************END***********
@@ -425,7 +417,6 @@ p>.speaker {
   width: 20px;
 }
 
-
 .hear {
   background-color: #eee;
   padding: 7px 15px;
@@ -469,7 +460,6 @@ p>.speaker {
   animation: btnslideinright 2s;
 }
 
-
 @keyframes btnslideinright {
   0% {
     transform: translateX(100px);
@@ -485,7 +475,6 @@ p>.speaker {
 /*
 ************END***********
 */
-
 /*
 **************************
   consistent and reliable
@@ -575,7 +564,6 @@ input:checked+label {
   left: 0;
   z-index: 1;
   visibility: hidden;
-
 }
 
 #cost-effective {
@@ -646,8 +634,6 @@ Maths tutoring programmes
     line-height: 21px;
   }
 }
-
-
 
 /*
 ************END***********
@@ -872,7 +858,6 @@ Why schools like yours choose TSL
 /*
 ************END***********
 */
-
 /*
 **************************
           carousel
@@ -975,6 +960,7 @@ Why schools like yours choose TSL
   transform: translateX(-50%);
 }
 
+// animation that does not work
 // #maria-back:checked~#maria:not(.container-arrows),
 // #catherine-back:checked~#catherine:not(.container-arrows),
 // #mandy-back:checked~#mandy:not(.container-arrows),
@@ -1066,7 +1052,6 @@ Why schools like yours choose TSL
 /*
 ************END***********
 */
-
 /*
 **************************
 Working in partnership with the education community
@@ -1148,7 +1133,6 @@ Working in partnership with the education community
 /*
 ************END***********
 */
-
 /*
 **************************
   ready to get started
@@ -1159,7 +1143,6 @@ Working in partnership with the education community
   background-color: white;
   max-width: 515px;
   margin: 0px 15px 20px 15px;
-
   padding: 28px 60px;
 
   h2 {
@@ -1190,7 +1173,6 @@ main {
 /*
 ************END***********
 */
-
 /*
 **************************
           footer
@@ -1218,7 +1200,6 @@ footer {
     }
   }
 
-
   p {
     margin-bottom: 0px;
     text-align: left;
@@ -1228,8 +1209,6 @@ footer {
       font-size: 15px;
     }
   }
-
-
 }
 
 .container-footer {
@@ -1353,7 +1332,6 @@ footer .logo-footer {
 /*
 ************END***********
 */
-
 /*
 **************************
       media queries
@@ -1523,8 +1501,6 @@ footer .logo-footer {
   }
 }
 
-
-
 @media (min-width: 640px) {
 
   .container-footer,
@@ -1640,7 +1616,6 @@ footer .logo-footer {
   .container-form {
     height: 218px;
   }
-
 
   header a,
   header .come-down .dropdown {
@@ -1925,7 +1900,6 @@ footer .logo-footer {
   .container-ready .btn {
     padding: 15px 40px;
   }
-
 }
 
 @media (min-width: 781px) {
@@ -1933,13 +1907,10 @@ footer .logo-footer {
     max-width: 781px;
   }
 
-
-
   .contact span,
   footer p,
   footer ul li ul li a {
     line-height: 29px;
-    ;
   }
 }
 
@@ -2231,7 +2202,6 @@ footer .logo-footer {
   #daniel-back:checked~#daniel,
   #angie-back:checked~#angie {
     padding-bottom: 30px;
-
   }
 
   .carousel-item a {
@@ -2262,8 +2232,6 @@ footer .logo-footer {
   .links-footer {
     gap: 0px 73px;
   }
-
-
 }
 
 @media (min-width: 1200px) {
@@ -2445,7 +2413,6 @@ footer .logo-footer {
   .blog {
     margin-bottom: 2px;
     font-size: 15px;
-
   }
 
   .logo-dropdown {
@@ -2544,7 +2511,6 @@ footer .logo-footer {
 
   .why>div {
     padding: 15px 0px;
-
 
     picture {
       max-width: 747px;
